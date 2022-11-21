@@ -111,8 +111,8 @@ nav ul li {
 }
 
 .songInfo {
-    position: absolute;
-    left: 10vw;
+    position: relative;
+    
     font-family: 'Varela Round', sans-serif;
 
 }
