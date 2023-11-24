@@ -9,6 +9,7 @@ let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
+
 let songs = [
     { songName: "Tum hi Ho ", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
     { songName: "Khamosiyan", filePath: "songs/2.mp3", coverPath: "covers/2.jpg" },
@@ -27,6 +28,26 @@ songItems.forEach((element, i) => {
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+    const homeLink = document.getElementById('home-link');
+    const aboutLink = document.getElementById('about-link');
+    const infoContainer = document.getElementById('info-container');
+
+    homeLink.addEventListener('click', function () {
+        showInfo('Home Information', 'This is the Home page content.');
+    });
+
+    aboutLink.addEventListener('click', function () {
+        showInfo('About Information', 'This is the About page content.');
+    });
+
+    function showInfo(title, content) {
+        infoContainer.innerHTML = `
+            <h2>${title}</h2>
+            <p>${content}</p>
+        `;
+    }
+});
 
 // Handle play/pause click
 masterPlay.addEventListener('click', () => {
