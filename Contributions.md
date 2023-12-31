@@ -3,19 +3,19 @@
 Welcome to the Spotify Clone project! We appreciate your interest in contributing to this project. Whether you're a beginner or an experienced developer, your contributions are valuable. Please follow the guidelines below to ensure a smooth contribution process.
 
 ## Table of Contents
-- #getting-started
-- #contribution-guidelines
-- #code-of-conduct
-- #feedback
-- #issues
+- [getting-started](#getting-started)
+- [contribution-guidelines](#contribution-guidelines)
+- [code-of-conduct](#code-of-conduct)
+- [feedback](#feedback)
+- [issues](#issues)
 
 ## Getting Started
 
-1. Fork the repository: [Corrupteddisk/spotifyclone](https://github.com/your-username/spotifyclone.git)
+1. Fork the repository: [Corrupteddisk/SpotifycloneWeb](https://github.com/Corrupteddisk/SpotifycloneWeb.git)
 2. Clone the forked repository to your local machine:
 
     ```bash
-    git clone https://github.com/your-username/spotifyclone.git
+    git clone https://github.com/Corrupteddisk/SpotifycloneWeb.git
     ```
 
 3. Create a new branch for your feature:
@@ -36,14 +36,16 @@ Welcome to the Spotify Clone project! We appreciate your interest in contributin
     git push origin feature-name
     ```
 
-6. Create a pull request, explaining your changes.
+6. Create a pull request explaining your changes.
+
+## NOTE: Please create a separate branch to make your changes, don't commit in main branch. It won't be counted !
 
 ## Contribution Guidelines
 
-- Ensure that your code follows the existing coding style and structure.
+- Please ensure your code follows the existing coding style and structure.
 - Test your changes thoroughly to avoid introducing bugs.
 - Document any significant changes or new features in the README.md file.
-- Include relevant comments in your code to aid understanding.
+- Please include relevant comments in your code to help you understand.
 
 ## Code of Conduct
 
@@ -55,7 +57,7 @@ If you have any feedback, questions, or suggestions, feel free to open an issue 
 
 ## Issues
 
-If you encounter any issues with the project or have ideas for improvements, please check the [Issues](https://github.com/your-username/spotifyclone/issues) section before opening a new one. This helps us avoid duplication and keeps everything organized.
+If you encounter any issues with the project or have ideas for improvements, please check the [Issues](https://github.com/Corrupteddisk/SpotifycloneWeb/issues) section before opening a new one. This helps us avoid duplication and keeps everything organized.
 
 Happy coding! 🎵🚀
 
