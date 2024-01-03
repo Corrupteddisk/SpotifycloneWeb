@@ -28,7 +28,14 @@ nav ul {
 
 nav ul li {
     padding: 0 12px;
+    /* use this to make li with logo in  navbar curser pointer to use it un-comment it */
+    /* cursor: pointer; */
+}
+
+nav ul div li {
+    padding: 0 12px;
     cursor: pointer;
+
 }
 
 .brand img {
