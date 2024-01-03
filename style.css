@@ -12,6 +12,9 @@ body {
 
 nav {
     font-family: 'Ubuntu', sans-serif;
+    /* use this to make full navbar curser pointer to use it un-comment it */
+    /* cursor: pointer;  */
+
 }
 
 nav ul {
@@ -25,6 +28,15 @@ nav ul {
 
 nav ul li {
     padding: 0 12px;
+    /* use this to make li with logo in  navbar curser pointer to use it un-comment it */
+    /* cursor: pointer; */
+}
+
+nav ul div li {
+    /* I use div approch */
+    padding: 0 12px;
+    cursor: pointer;
+
 }
 
 .brand img {
@@ -112,8 +124,8 @@ nav ul li {
 
 .songInfo {
     position: relative;
-    left:10vw;
-    
+    left: 10vw;
+
     font-family: 'Varela Round', sans-serif;
 
 }
