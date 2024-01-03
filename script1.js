@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    { songName: "Tum hi Ho ", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
-    { songName: "Khamosiyan", filePath: "songs/2.mp3", coverPath: "covers/2.jpg" },
-    { songName: "Sanam Re", filePath: "songs/3.mp3", coverPath: "covers/3.jpg" },
-    { songName: "Ae Dil He Muskil", filePath: "songs/4.mp3", coverPath: "covers/4.jpg" },
-    { songName: "Mareez-E-Isque", filePath: "songs/5.mp3", coverPath: "covers/5.jpg" },
-    { songName: "Ghungroo", filePath: "songs/6.mp3", coverPath: "covers/6.jpg" },
-    { songName: "Itni si Bat hey", filePath: "songs/7.mp3", coverPath: "covers/7.jpg" },
-    { songName: "Kabhi jo Badal Barse", filePath: "songs/8.mp3", coverPath: "covers/8.jpg" },
-    { songName: "Chal Wahan Jate he", filePath: "songs/9.mp3", coverPath: "covers/9.jpg" },
-    { songName: "Sooraj Dooba hein", filePath: "songs/10.mp3", coverPath: "covers/10.jpg" },
+    { songName: "Tum hi Ho ", filePath: "songs/1.mp3", coverPath: "covers/tum-hi-ho.jpg" },
+    { songName: "Khamosiyan", filePath: "songs/2.mp3", coverPath: "covers/khamoshiyan.jpg" },
+    { songName: "Sanam Re", filePath: "songs/3.mp3", coverPath: "covers/sanam-re.jpg" },
+    { songName: "Ae Dil He Muskil", filePath: "songs/4.mp3", coverPath: "covers/ae-dil-hai-muskil.jpg" },
+    { songName: "Mareez-E-Isque", filePath: "songs/5.mp3", coverPath: "covers/Mareez-E-Ishq.jpg" },
+    { songName: "Ghungroo", filePath: "songs/6.mp3", coverPath: "covers/ghungroo.jpg" },
+    { songName: "Itni si Bat hey", filePath: "songs/7.mp3", coverPath: "covers/itni-si-baat-hai.jpeg" },
+    { songName: "Kabhi jo Badal Barse", filePath: "songs/8.mp3", coverPath: "covers/kabhi-jo-badal.jpg" },
+    { songName: "Chal Wahan Jate he", filePath: "songs/9.mp3", coverPath: "covers/Chal-Wahan-Jaate-Hain.jpg" },
+    { songName: "Sooraj Dooba hein", filePath: "songs/10.mp3", coverPath: "covers/Sooraj-Dooba-Hain.jpg" },
 ]
 
 songItems.forEach((element, i) => {
