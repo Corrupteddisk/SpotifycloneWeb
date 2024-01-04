@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Raleway&family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Raleway&family=Ubuntu&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@600&family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
 
 body {
-    background-color: antiquewhite;
+    background-color: rgba(17, 17, 17, 1);
 }
 
 * {
@@ -164,6 +165,103 @@ body{
 
 #myProgressBar{
     width: 60%;
+}
+
+.arijit-singh{
+    background-color: black;
+    height: 500px;
+    display: flex;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.arijit-details{
+    display: flex;
+    width: 75%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 1);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./covers/a-singh.jpg');
+    background-size: cover;
+}
+
+.arijit-about > h1{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    color: azure;
+    text-decoration: underline;
+    
+}
+
+.arijit-about > p{
+    color: azure;
+    font-size: 25px;
+    text-align: left;
+}
+
+.arijit-pic{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.arijit-packet{
+    width: 500px;
+    border-radius: 20px;
+}
+
+.arijit-pic > img{
+    height: 500px;
+    border-radius: 20px;
+}
+
+
+footer{
+    background-color: black;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.spt-logo > img{
+    width: 200px;
+}
+
+.foot{
+    height: 40vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+ul{
+    list-style: none;
+    cursor: pointer;
+}
+
+.main-head{
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Bitter', serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons > img{
+    width: 45px;
 }
 
 @media only screen and (max-width: 1100px) {
