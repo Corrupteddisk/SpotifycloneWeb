@@ -166,13 +166,11 @@ body{
 #myProgressBar{
     width: 60%;
 }
-
 .arijit-singh{
     background-color: black;
     height: 500px;
     display: flex;
     gap: 20px;
-    border-radius: 20px;
 }
 
 .arijit-details{
@@ -185,27 +183,35 @@ body{
     align-items: center;
     background-image: url('./covers/a-singh.jpg');
     background-size: cover;
+    margin: 20px 20px;
 }
 
 .arijit-about > h1{
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 70px;
+    font-size: 3rem;
     color: azure;
     text-decoration: underline;
+    margin-left: 20px;
+    margin-top: 10px;
     
 }
 
 .arijit-about > p{
     color: azure;
-    font-size: 25px;
+    font-size: 1.2rem;
     text-align: left;
+    padding:20px 20px;
+    margin:10px 10px;
 }
 
 .arijit-pic{
     width: 500px;
-    border-radius: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 5px;
+    margin-top: 20px;
 }
 
 .arijit-packet{
@@ -215,8 +221,11 @@ body{
 
 .arijit-pic > img{
     height: 500px;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 5px;
 }
+
 
 
 footer{
@@ -231,6 +240,8 @@ footer{
 
 .spt-logo > img{
     width: 200px;
+    padding: 15px 15px;
+    margin-left:20px ;
 }
 
 .foot{
@@ -258,12 +269,54 @@ ul{
 .social-icons{
     display: flex;
     justify-content: center;
+   
+}
+.social-icons i{
+    color: white;
+    font-size: 3rem;
+    padding: 5px 5px;
+    margin: 4px 4px;
+}
+.social-icons i:hover{
+    color: rgba(255, 255, 255, 0.500);
 }
 
-.social-icons > img{
-    width: 45px;
+/*adding CSS to the links */
+.company ul li a {
+    text-decoration: none;
+    color: white;
+    padding:2px 2px;
+}
+.company ul li a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.500);
+    padding: 3px 3px;
+}
+.community ul li a {
+    text-decoration: none;
+    color: white;
+    padding:2px 2px;
+}
+.community ul li a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.500);
+    padding: 3px 3px;
 }
 
+.links ul li a {
+    text-decoration: none;
+    color: white;
+    padding:2px 2px;
+}
+.links ul li a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.500);
+    padding: 3px 3px;
+}
+.main-head:hover{
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.500);
+}
 @media only screen and (max-width: 1100px) {
     body {
         background-color: red;
