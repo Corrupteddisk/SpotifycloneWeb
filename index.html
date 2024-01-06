@@ -15,12 +15,19 @@
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
             <div class="brand">
-                <li>Home</li>
-                <li>About</li>
-                <li>Support</li>
+                <li class="hideonmobile">Home</li>
+                <li class="hideonmobile">About</li>
+                <li class="hideonmobile">Support</li>
             </div>
+            <li class="menu" onclick="showSidebar()"><i class="material-icons" id="menu-icon">menu</i></li>
+        </ul>
 
-
+        <ul class="sidebar">
+            <li class="menu close-menu" onclick="hideSidebar()"><i class="material-icons" id="menu-icon-close">close</i>
+            </li>
+            <li class="hover_effect">Home</li>
+            <li class="hover_effect">About</li>
+            <li class="hover_effect">Support</li>
         </ul>
     </nav>
 
@@ -167,7 +174,7 @@
             </div>
         </footer>
     </div>
-
+    <script src="navbar.js"></script>
     <script src="script1.js"></script>
     <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
 </body>
