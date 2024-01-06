@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SayMusic-Dedicated to Arijit Singh</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,14 +17,22 @@
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
             <div class="brand">
-                <li>Home</li>
-                <li>About</li>
-                <li>Support</li>
+                <li class="hideonmobile">Home</li>
+                <li class="hideonmobile">About</li>
+                <li class="hideonmobile">Support</li>
             </div>
+            <li class="menu" onclick="showSidebar()"><i class="material-icons" id="menu-icon">menu</i></li>
+        </ul>
 
-
+        <ul class="sidebar">
+            <li class="menu close-menu" onclick="hideSidebar()"><i class="material-icons" id="menu-icon-close">close</i>
+            </li>
+            <li class="hover_effect">Home</li>
+            <li class="hover_effect">About</li>
+            <li class="hover_effect">Support</li>
         </ul>
     </nav>
+
 
     <div class="container">
         <div class="songList">
@@ -32,7 +41,7 @@
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="0"
+                    <span class="songlistplay"><span class="timestamp">04:22 <i id="0"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
@@ -44,49 +53,49 @@
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="2"
+                    <span class="songlistplay"><span class="timestamp">05:07 <i id="2"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="3"
+                    <span class="songlistplay"><span class="timestamp">04:29 <i id="3"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="4"
+                    <span class="songlistplay"><span class="timestamp">04:51 <i id="4"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="5"
+                    <span class="songlistplay"><span class="timestamp">05:02 <i id="5"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="6"
+                    <span class="songlistplay"><span class="timestamp">04:53 <i id="6"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="7"
+                    <span class="songlistplay"><span class="timestamp">04:15 <i id="7"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="8"
+                    <span class="songlistplay"><span class="timestamp">05:24 <i id="8"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
-                    <span class="songlistplay"><span class="timestamp">05:34 <i id="9"
+                    <span class="songlistplay"><span class="timestamp">04:23 <i id="9"
                                 class="far songItemPlay fa-play-circle"></i> </span></span>
                 </div>
             </div>
@@ -110,68 +119,55 @@
     <hr>
     <br>
     <div class="ar-main">
+        <h1>ARIJIT SINGH</h1>
         <div class="arijit-singh">
+           
             <div class="arijit-details">
                 <div class="arijit-about">
-                    <h1>ARIJIT SINGH</h1>
+                    
                     <br><br><br><br>
-                    <p>Arijit Singh, born on April 25, 1987, in West Bengal, India, is a highly acclaimed playback singer in the Bollywood music industry. Known for his soulful and emotive voice, Arijit gained widespread recognition with his debut song "Phir Mohabbat" from the movie Murder 2 in 2011. Since then, he has become a dominant force in the Indian music scene, delivering numerous chart-topping hits. His versatile singing style encompasses various genres, making him a sought-after artist for composers. Arijit has received numerous awards for his contributions to music, earning a dedicated fan base for his impactful and heartfelt renditions.</p>
+                    <p>Arijit Singh, born on April 25, 1987, in West Bengal, India, is a highly acclaimed playback
+                        singer in the Bollywood music industry. Known for his soulful and emotive voice, Arijit gained
+                        widespread recognition with his debut song "Phir Mohabbat" from the movie Murder 2 in 2011.
+                        Since then, he has become a dominant force in the Indian music scene, delivering numerous
+                        chart-topping hits. His versatile singing style encompasses various genres, making him a
+                        sought-after artist for composers. Arijit has received numerous awards for his contributions to
+                        music, earning a dedicated fan base for his impactful and heartfelt renditions.</p>
                 </div>
-                
+
             </div>
             <div class="arijit-pic">
                 <img src="./covers/arijit.jpg" alt="">
             </div>
         </div>
-    
+
         <footer>
             <div class="footer-container"></div>
-                <div class="spt-logo">
-                    <img src="./covers/Spotify-White-Logo.png" alt="">
+            <div class="spt-logo">
+                <img src="./covers/Spotify-White-Logo.png" alt="">
+            </div>
+            <div class="foot">
+                <div class="company">
+                    <ul>
+                        <li class="main-head">Company</li>
+                        <br>
+                        <li>About</li>
+                        <li>Jobs</li>
+                        <li>For the Record</li>
+                    </ul>
                 </div>
-                <div class="foot">
-                    <div class="company">
-                        <ul>
-                            <li class="main-head">Company</li>
-                            <br>
-                            <li><a href=" ">About</a></li>
-                            <li><a href=" ">Jobs</a></li>
-                            <li><a href=" ">Record</a></li>
-                            
-                        </ul>
-                    </div>
-                    <div class="community">
-                        <ul>
-                            <li class="main-head">Communities</li>
-                            <br>
-                            <li><a href="  ">For Artists</a></li>
-                            <li><a href="  ">Developers</a></li>
-                            <li><a href="  ">Communities</a></li>
-                            <li><a href="  ">Advertising</a></li>
-                            <li><a href="  ">Investors</a></li>
-                            <li><a href="  ">Vendors</a></li>
-                           
-                        </ul>
-                    </div>
-                    <div class="links">
-                        <ul>
-                            <li class="main-head">Useful Links</li>
-                            <br>
-                            <li><a href="  ">Support</a></li>
-                            <li> <a href="  ">Free Mobile App</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="social-icons">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
 
                 </div>
             </div>
-        </footer>
+            <div class="social-icons">
+                <img src="./covers/fb.png" alt="">
+                <img src="./covers/ig.png" alt="">
+                <img src="./covers/twt.png" alt="">
+            </div>
     </div>
-
+    </footer>
+    </div>
+    <script src="navbar.js"></script>
     <script src="script1.js"></script>
     <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
 </body>
