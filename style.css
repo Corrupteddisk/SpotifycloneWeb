@@ -41,6 +41,10 @@ nav ul div li {
 
 }
 
+nav li:last-child {
+    margin-left: auto;
+}
+
 .brand img {
     width: 54px;
     padding: 0 10px;
@@ -52,6 +56,67 @@ nav ul div li {
     align-items: center;
     font-weight: bolder;
     font-size: 1.5rem;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10ox rgba(0, 0, 0, 0, 1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sidebar li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    height: 65px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.close-menu {
+    justify-content: center !important;
+    align-items: flex-end !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 48px;
+}
+
+#menu-icon-close {
+    color: white;
+    font-size: 48px;
+}
+
+.hover_effect:hover{
+    color: blue;
+    text-decoration: underline;
 }
 
 .container {
@@ -101,7 +166,7 @@ nav ul div li {
 
 }
 
-#masterSongName{
+#masterSongName {
     padding-left: 10px;
 }
 
@@ -149,7 +214,7 @@ nav ul div li {
 
 }
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,14 +225,14 @@ body{
 .songInfo img {
     opacity: 0;
     transition: opacity 0.4s ease-in;
-    
+
 }
 
-#myProgressBar{
+#myProgressBar {
     width: 60%;
 }
 
-.arijit-singh{
+.arijit-singh {
     background-color: black;
     height: 500px;
     display: flex;
@@ -175,7 +240,7 @@ body{
     border-radius: 20px;
 }
 
-.arijit-details{
+.arijit-details {
     display: flex;
     width: 75%;
     height: 100%;
@@ -187,53 +252,53 @@ body{
     background-size: cover;
 }
 
-.arijit-about > h1{
+.arijit-about>h1 {
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
     font-size: 70px;
     color: azure;
     text-decoration: underline;
-    
+
 }
 
-.arijit-about > p{
+.arijit-about>p {
     color: azure;
     font-size: 25px;
     text-align: left;
 }
 
-.arijit-pic{
+.arijit-pic {
     width: 500px;
     border-radius: 20px;
 }
 
-.arijit-packet{
+.arijit-packet {
     width: 500px;
     border-radius: 20px;
 }
 
-.arijit-pic > img{
+.arijit-pic>img {
     height: 500px;
     border-radius: 20px;
 }
 
 
-footer{
+footer {
     background-color: black;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
     flex-direction: column;
     background-color: black;
 }
 
-.spt-logo > img{
+.spt-logo>img {
     width: 200px;
 }
 
-.foot{
+.foot {
     height: 40vh;
     background-color: black;
     display: flex;
@@ -243,25 +308,36 @@ footer{
     font-size: 20px;
 }
 
-ul{
+ul {
     list-style: none;
     cursor: pointer;
 }
 
-.main-head{
+.main-head {
     font-family: 'Bebas Neue', sans-serif;
     font-family: 'Bitter', serif;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
 }
 
-.social-icons{
+.social-icons {
     display: flex;
     justify-content: center;
 }
 
-.social-icons > img{
+.social-icons>img {
     width: 45px;
+}
+
+@media(max-width:475px) {
+    .hideonmobile {
+        display: none;
+        ;
+    }
+
+    .menu {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
