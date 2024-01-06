@@ -234,18 +234,9 @@ body {
     width: 60%;
 }
 
-.ar-main {
-    margin-top: 20px;
-    background-color: black;
-}
-
-.arijit-singh {
     background-color: black;
     display: flex;
-    border-radius: 20px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+
 }
 
 .arijit-details {
@@ -265,7 +256,7 @@ h1 {
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
-    font-size: 70px;
+    font-size: 3rem;
     color: azure;
     text-decoration: underline;
 
@@ -273,16 +264,13 @@ h1 {
 
 .arijit-about>p {
     color: azure;
-    font-size: 25px;
+    font-size: 1.2rem;
     text-align: left;
+    padding:20px 20px;
+    margin:10px 10px;
 }
 
-.arijit-pic {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
+
 }
 
 .arijit-packet {
@@ -292,10 +280,12 @@ h1 {
 
 .arijit-pic>img {
     height: 500px;
-    border-radius: 20px;
+    border-radius: 15px;
+    margin-right: 20px;
+    margin-left: 5px;
 }
 
-* footer {
+
     background-color: black;
     width: 100%;
 }
@@ -308,6 +298,8 @@ h1 {
 
 .spt-logo>img {
     width: 200px;
+    padding: 15px 15px;
+    margin-left:20px ;
 }
 
 .foot {
@@ -337,22 +329,18 @@ ul {
 .social-icons {
     display: flex;
     justify-content: center;
+   
+}
+.social-icons i{
+    color: white;
+    font-size: 3rem;
+    padding: 5px 5px;
+    margin: 4px 4px;
+}
+.social-icons i:hover{
+    color: rgba(255, 255, 255, 0.500);
 }
 
-.social-icons>img {
-    width: 45px;
-}
-
-@media(max-width:475px) {
-    .hideonmobile {
-        display: none;
-        ;
-    }
-
-    .menu {
-        display: block;
-    }
-}
 
 @media only screen and (max-width: 1100px) {
     body {
