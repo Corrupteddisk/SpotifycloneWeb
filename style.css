@@ -114,7 +114,7 @@ nav li:last-child {
     font-size: 48px;
 }
 
-.hover_effect:hover{
+.hover_effect:hover {
     color: blue;
     text-decoration: underline;
 }
@@ -149,6 +149,7 @@ nav li:last-child {
     -webkit-backdrop-filter: blur(8.1px);
     border: 1px solid rgba(0, 0, 0, 0.52);
     width: 90%;
+    margin: auto;
 }
 
 .icon {
@@ -215,9 +216,10 @@ nav li:last-child {
 }
 
 body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
+    text-align: center;
 }
 
 
@@ -232,27 +234,34 @@ body {
     width: 60%;
 }
 
+.ar-main {
+    margin-top: 20px;
+    background-color: black;
+}
+
 .arijit-singh {
     background-color: black;
-    height: 500px;
     display: flex;
-    gap: 20px;
     border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .arijit-details {
     display: flex;
-    width: 75%;
+    /* width: 75%; */
     height: 100%;
     background-color: rgba(17, 17, 17, 1);
     border-radius: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background-image: url('./covers/a-singh.jpg');
     background-size: cover;
+
 }
 
-.arijit-about>h1 {
+h1 {
     display: flex;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
@@ -269,7 +278,10 @@ body {
 }
 
 .arijit-pic {
-    width: 500px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     border-radius: 20px;
 }
 
@@ -283,9 +295,9 @@ body {
     border-radius: 20px;
 }
 
-
-footer {
+* footer {
     background-color: black;
+    width: 100%;
 }
 
 .footer-container {
@@ -304,8 +316,10 @@ footer {
     display: flex;
     align-items: center;
     color: white;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 ul {
@@ -343,5 +357,11 @@ ul {
 @media only screen and (max-width: 1100px) {
     body {
         background-color: red;
+    }
+}
+
+@media(max-width:503px) {
+    .arijit-pic img {
+        width: 100%;
     }
 }
