@@ -234,10 +234,7 @@ body {
     width: 60%;
 }
 
-    background-color: black;
-    display: flex;
 
-}
 
 .arijit-details {
     display: flex;
@@ -247,7 +244,7 @@ body {
     border-radius: 20px;
     justify-content: space-evenly;
     align-items: center;
-    background-image: url('./covers/a-singh.jpg');
+    /* background-image: url('./covers/a-singh.jpg'); */
     background-size: cover;
 
 }
@@ -271,7 +268,6 @@ h1 {
 }
 
 
-}
 
 .arijit-packet {
     width: 500px;
@@ -286,9 +282,6 @@ h1 {
 }
 
 
-    background-color: black;
-    width: 100%;
-}
 
 .footer-container {
     display: flex;
