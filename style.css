@@ -207,7 +207,7 @@ nav li:last-child {
     width: 60%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-size: 1.5rem;
     position: relative;
 
@@ -334,7 +334,11 @@ ul {
     color: rgba(255, 255, 255, 0.500);
 }
 
-
+.songInfo>div{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
 @media only screen and (max-width: 1100px) {
     body {
         background-color: red;
