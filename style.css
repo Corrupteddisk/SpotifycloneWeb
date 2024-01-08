@@ -186,10 +186,20 @@ nav li:last-child {
     border-radius: 35px;
 
 }
+.songItem.currentSongItem{
+    background: rgba(0, 0, 0, 0.62);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    border: 1px solid rgba(0, 0, 0, 0.52);
+    color: #ffffff;
+    text-shadow: 0 0 20px #ffffff;
+    -webkit-text-stroke-width: thin;
+}
 
 .songItem img {
     width: 43px;
-    margin: 0 23px;
+    margin: 0 23px 0 5px;
     border-radius: 32px;
 
 }
@@ -207,7 +217,7 @@ nav li:last-child {
     width: 60%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-size: 1.5rem;
     position: relative;
 
@@ -403,23 +413,7 @@ ul li:hover {
     color:  white;
 }
 
-@media (max-width:785px){
-    .panel2{
-        flex-direction: column;
-    }
-    .foot{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-  
-    }
-    .company ul{
-        text-align: center;
-    }
-    .company ul li{
-        text-align: center;
-    }
+
 }
 @media only screen and (max-width: 1100px) {
     body {
