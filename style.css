@@ -220,6 +220,7 @@ body {
     flex-direction: column;
     align-items: center; */
     text-align: center;
+    position: relative;
 }
 
 
@@ -263,8 +264,8 @@ h1 {
     color: azure;
     font-size: 1.2rem;
     text-align: left;
-    padding:20px 20px;
-    margin:10px 10px;
+    padding: 20px 20px;
+    margin: 10px 10px;
 }
 
 
@@ -280,36 +281,69 @@ h1 {
     margin-right: 20px;
     margin-left: 5px;
 }
+footer{
+    background-color: black;
+width: 100%;
+}
 
-
+.panel2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-right: 30px;
+    gap: 20px;
+}
 
 .footer-container {
     display: flex;
     flex-direction: column;
     background-color: black;
+    height: 100%;
+}
+
+.spt-logo {
+    margin-bottom: 10px;
 }
 
 .spt-logo>img {
     width: 200px;
     padding: 15px 15px;
-    margin-left:20px ;
+    margin-left: 20px;
 }
 
 .foot {
-    height: 40vh;
+    /* height: 40vh; */
     background-color: black;
     display: flex;
     align-items: center;
     color: white;
-    justify-content: space-evenly;
-    font-size: 20px;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 90px;
+    margin-bottom: auto;
+}
+
+.company {
+    margin-bottom: auto;
 }
 
 ul {
     list-style: none;
+    text-align: left;
+}
+
+ul li {
+    list-style-type: none;
     cursor: pointer;
+    color: rgb(147, 140, 140);
+    margin-top: 15px ;
+}
+
+ul li:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 .main-head {
@@ -317,24 +351,76 @@ ul {
     font-family: 'Bitter', serif;
     font-family: 'Nunito Sans', sans-serif;
     font-weight: bolder;
+    pointer-events: none;
+}
+
+.icon_border {
+    border: 0.5px solid black;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(168, 164, 164,0.5);
+    margin: 9px 9px;
+}
+.icon_border :hover{
+    transform: scale(1.2);
+    transition: ease 0.5s;
+    border-radius: 100%;
+    background-color: rgb(123, 144, 144);
 }
 
 .social-icons {
     display: flex;
     justify-content: center;
-   
+    margin-bottom: auto;
 }
-.social-icons i{
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    padding: 5px 5px;
+    margin: 4px 4px;
+    color: white;
+}
+
+.social-icons i {
     color: white;
     font-size: 3rem;
     padding: 5px 5px;
     margin: 4px 4px;
 }
-.social-icons i:hover{
+
+.social-icons i:hover {
     color: rgba(255, 255, 255, 0.500);
 }
+.panel3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.panel3 p{
+    color:  white;
+}
 
-
+@media (max-width:785px){
+    .panel2{
+        flex-direction: column;
+    }
+    .foot{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+  
+    }
+    .company ul{
+        text-align: center;
+    }
+    .company ul li{
+        text-align: center;
+    }
+}
 @media only screen and (max-width: 1100px) {
     body {
         background-color: red;
