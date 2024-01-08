@@ -29,6 +29,7 @@ songItems.forEach((element, i) => {
 })
 
 document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
+document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
 
 // Handle play/pause click
 masterPlay.addEventListener('click', () => {
@@ -91,10 +92,11 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
         else if (e.target.classList.contains("fa-play-circle")) {
             makeAllPlays();
             if (!e.target.classList.contains("paused")) {
-
+                document.querySelectorAll(".songItem")[songIndex].classList.remove("currentSongItem")
                 songIndex = parseInt(e.target.id);
                 audioElement.src = `songs/${songIndex + 1}.mp3`;
                 document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
+                document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
                 masterSongName.innerText = songs[songIndex].songName;
                 audioElement.currentTime = 0;
 
@@ -117,6 +119,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
 document.getElementById('next').addEventListener('click', () => {
     document.querySelectorAll(".songItemPlay")[songIndex].classList.remove('fa-pause-circle')
     document.querySelectorAll(".songItemPlay")[songIndex].classList.add('fa-play-circle')
+    document.querySelectorAll(".songItem")[songIndex].classList.remove("currentSongItem")
     if (document.getElementsByClassName("paused")[0]) {
         document.getElementsByClassName("paused")[0].classList.remove("paused");
     }
@@ -133,6 +136,7 @@ document.getElementById('next').addEventListener('click', () => {
 
     audioElement.src = `songs/${songIndex + 1}.mp3`;
     document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
+    document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -147,6 +151,7 @@ document.getElementById('next').addEventListener('click', () => {
 document.getElementById('previous').addEventListener('click', () => {
     document.querySelectorAll(".songItemPlay")[songIndex].classList.remove('fa-pause-circle')
     document.querySelectorAll(".songItemPlay")[songIndex].classList.add('fa-play-circle')
+    document.querySelectorAll(".songItem")[songIndex].classList.remove("currentSongItem")
     if (document.getElementsByClassName("paused")[0]) {
         document.getElementsByClassName("paused")[0].classList.remove("paused");
     }
@@ -161,6 +166,7 @@ document.getElementById('previous').addEventListener('click', () => {
     }
     audioElement.src = `songs/${songIndex + 1}.mp3`;
     document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
+    document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
