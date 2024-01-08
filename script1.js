@@ -9,6 +9,7 @@ let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
+
 let songs = [
     { songName: "Tum hi Ho ", filePath: "songs/1.mp3", coverPath: "covers/tum-hi-ho.jpg" },
     { songName: "Khamosiyan", filePath: "songs/2.mp3", coverPath: "covers/khamoshiyan.jpg" },
@@ -27,6 +28,7 @@ songItems.forEach((element, i) => {
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
 })
 
+document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
 
 // Handle play/pause click
 masterPlay.addEventListener('click', () => {
@@ -92,6 +94,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
 
                 songIndex = parseInt(e.target.id);
                 audioElement.src = `songs/${songIndex + 1}.mp3`;
+                document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
                 masterSongName.innerText = songs[songIndex].songName;
                 audioElement.currentTime = 0;
 
@@ -129,6 +132,7 @@ document.getElementById('next').addEventListener('click', () => {
     }
 
     audioElement.src = `songs/${songIndex + 1}.mp3`;
+    document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -156,6 +160,7 @@ document.getElementById('previous').addEventListener('click', () => {
         songIndex -= 1;
     }
     audioElement.src = `songs/${songIndex + 1}.mp3`;
+    document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -165,3 +170,12 @@ document.getElementById('previous').addEventListener('click', () => {
     document.querySelectorAll(".songItemPlay")[songIndex].classList.add('fa-pause-circle')
     document.querySelectorAll(".songItemPlay")[songIndex].classList.add('playing')
 })
+
+let min , sec
+setInterval(displaySongTime,1000)
+function displaySongTime(){
+    min = Math.floor(audioElement.currentTime/60)
+    sec = Math.floor(audioElement.currentTime%60)
+    
+    document.getElementById("songCurrTime").innerText =  ((min>=10)?sec : ("0"+ min)) + ":" + ((sec>=10)?sec : ("0"+ sec))
+}
