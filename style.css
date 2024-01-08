@@ -186,10 +186,20 @@ nav li:last-child {
     border-radius: 35px;
 
 }
+.songItem.currentSongItem{
+    background: rgba(0, 0, 0, 0.62);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    border: 1px solid rgba(0, 0, 0, 0.52);
+    color: #ffffff;
+    text-shadow: 0 0 20px #ffffff;
+    -webkit-text-stroke-width: thin;
+}
 
 .songItem img {
     width: 43px;
-    margin: 0 23px;
+    margin: 0 23px 0 5px;
     border-radius: 32px;
 
 }
