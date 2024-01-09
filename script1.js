@@ -73,27 +73,28 @@ const makeAllPlays = () => {
     })
 }
 
-Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
+
+songItems.forEach((element) => {
     element.addEventListener('click', (e) => {
         if (document.getElementsByClassName("playing")[0]) {
             document.getElementsByClassName("playing")[0].classList.remove("playing");
         }
-        if (e.target.classList.contains("fa-pause-circle")) {
+        if (e.target.getElementsByClassName("songItemPlay")[0].classList.contains("fa-pause-circle")) {
             makeAllPlays();
-            songIndex = parseInt(e.target.id);
+            songIndex = parseInt(e.target.getElementsByClassName("songItemPlay")[0].id);
             audioElement.pause();
             gif.style.opacity = 0;
-            e.target.classList.add("paused");
+            e.target.getElementsByClassName("songItemPlay")[0].classList.add("paused");
             masterPlay.classList.remove('fa-pause-circle');
             masterPlay.classList.add('fa-play-circle');
 
 
         }
-        else if (e.target.classList.contains("fa-play-circle")) {
+        else if (e.target.getElementsByClassName("songItemPlay")[0].classList.contains("fa-play-circle")) {
             makeAllPlays();
-            if (!e.target.classList.contains("paused")) {
+            if (!e.target.getElementsByClassName("songItemPlay")[0].classList.contains("paused")) {
                 document.querySelectorAll(".songItem")[songIndex].classList.remove("currentSongItem")
-                songIndex = parseInt(e.target.id);
+                songIndex = parseInt(e.target.getElementsByClassName("songItemPlay")[0].id);
                 audioElement.src = `songs/${songIndex + 1}.mp3`;
                 document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
                 document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
@@ -105,9 +106,9 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
             if (document.getElementsByClassName("paused")[0]) {
                 document.getElementsByClassName("paused")[0].classList.remove("paused");
             }
-            e.target.classList.add("playing");
-            e.target.classList.remove('fa-play-circle');
-            e.target.classList.add('fa-pause-circle');
+            e.target.getElementsByClassName("songItemPlay")[0].classList.add("playing");
+            e.target.getElementsByClassName("songItemPlay")[0].classList.remove('fa-play-circle');
+            e.target.getElementsByClassName("songItemPlay")[0].classList.add('fa-pause-circle');
             audioElement.play();
             gif.style.opacity = 1;
             masterPlay.classList.remove('fa-play-circle');
