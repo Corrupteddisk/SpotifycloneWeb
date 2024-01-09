@@ -184,6 +184,7 @@ nav li:last-child {
     justify-content: space-between;
     align-items: center;
     border-radius: 35px;
+    cursor: pointer;
 
 }
 .songItem.currentSongItem{
@@ -211,6 +212,9 @@ nav li:last-child {
 .timestamp i {
     cursor: pointer;
 }
+.songItemPlay{
+    pointer-events: none;
+}
 
 .songInfo {
     position: relative;
@@ -223,6 +227,10 @@ nav li:last-child {
 
     font-family: 'Varela Round', sans-serif;
 
+}
+.songInfo>div{
+    display: flex;
+    align-items: center;
 }
 
 body {
