@@ -98,6 +98,10 @@ nav li:last-child {
     top: 0 !important;
 }
 
+.homelink{
+    color: rgb(147, 140, 140);
+}
+
 
 .menu {
     cursor: pointer;
