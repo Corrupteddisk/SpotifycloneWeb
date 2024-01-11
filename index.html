@@ -15,17 +15,15 @@
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
             <div class="brand">
                 <li class="hideonmobile"><a href="./home-page/home.html" class="homelink">Home</a></li>
                 <li class="hideonmobile">About</li>
                 <li class="hideonmobile">Support</li>
+                <li><a href="login.html" class="">Login</a></li>
             </div>
-            <li class="login-1 brand">
-                <a href="login.html" class="login-1a">Login</a>
-            </li>
             <li class="menu" onclick="showSidebar()"><i class="material-icons" id="menu-icon">menu</i></li>
         </ul>
 
@@ -37,8 +35,28 @@
             <li class="hover_effect">Support</li>
             <li class="hover_effect">Login</li>
         </ul>
-    </nav>
+    </nav> -->
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <div class="brand">
+                <li class="hideonmobile"><a href="./home-page/home.html" class="homelink1">Home</a></li>
+                <li class="hideonmobile">About</li>
+                <li class="hideonmobile">Support</li>
+                <li class="hideonmobile Login1"><a href="login.html" class="homelink2">Login</a></li>
+            </div>
+            <li class="menu" onclick="showSidebar()"><i class="material-icons" id="menu-icon">menu</i></li>
+        </ul>
 
+        <ul class="sidebar">
+            <li class="menu close-menu" onclick="hideSidebar()"><i class="material-icons" id="menu-icon-close">close</i>
+            </li>
+            <li class="hover_effect">Home</li>
+            <li class="hover_effect">About</li>
+            <li class="hover_effect">Support</li>
+            <li class="hover_effect"><a href="login.html" class="loginlink">Login</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
         <div class="songList">
@@ -140,21 +158,26 @@
                 <div class="myCard">
                     <div class="innerCard">
                         <div class="frontSide">
-                             <img src="./covers/arijit.jpg" alt="">
+                            <img src="./covers/arijit.jpg" alt="">
                         </div>
                         <div class="backSide">
-                            <p>Arijit Singh, born on April 25, 1987, in West Bengal, India, is a highly acclaimed playback
-                                singer in the Bollywood music industry. Known for his soulful and emotive voice, Arijit gained
-                                widespread recognition with his debut song "Phir Mohabbat" from the movie Murder 2 in 2011.
-                                Since then, he has become a dominant force in the Indian music scene, delivering numerous
+                            <p>Arijit Singh, born on April 25, 1987, in West Bengal, India, is a highly acclaimed
+                                playback
+                                singer in the Bollywood music industry. Known for his soulful and emotive voice, Arijit
+                                gained
+                                widespread recognition with his debut song "Phir Mohabbat" from the movie Murder 2 in
+                                2011.
+                                Since then, he has become a dominant force in the Indian music scene, delivering
+                                numerous
                                 chart-topping hits. His versatile singing style encompasses various genres, making him a
-                                sought-after artist for composers. Arijit has received numerous awards for his contributions to
+                                sought-after artist for composers. Arijit has received numerous awards for his
+                                contributions to
                                 music, earning a dedicated fan base for his impactful and heartfelt renditions.</p>
-                            
+
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
