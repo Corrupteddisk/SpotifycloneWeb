@@ -44,7 +44,7 @@ body{
     border-radius: 20px;
     color: white;
     font-weight: 600;
-    width: 6vw;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -228,3 +228,87 @@ body{
       box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
     }
   }
+
+@media (max-width: 1226px) {
+    .nav-bar{
+        position: relative;
+        top: 0.2vh;
+        height: 150px;
+        display: flex;
+        /* width: 3vw; */
+        justify-content: center;
+    }
+    /* .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+    .vid{
+        position: relative;
+        width: 25vw;
+        height: 10vh;
+    }
+
+    .intro{
+        position: relative;
+    }
+
+    .signup-login{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .signup, .login{
+        width: 70px;
+        height: 40px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 800px){
+    .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .front-card > img{
+        height: 50vh;
+    }
+    .container{
+        gap: 5vh;
+    }
+
+    .box{
+        height: 300px;
+        width: 300px;
+    }
+
+    /* .card{
+        top: 20vh;
+        height: 100px;
+        width: 90vw;
+    } */
+
+    .front-card{
+        height: 300px;
+        width: 400px;
+    }
+
+    .back-card{
+        height: 300px;
+        width: 300px;
+    }
+
+    .end-grid{
+        position: relative;
+        top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
