@@ -41,6 +41,30 @@ nav ul div li {
 
 }
 
+/* login button */
+.login-1 {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: 13px;
+}
+
+.login-1:hover {
+    background-color: #c3c3c3;
+    text-decoration: underline #c3c3c3;
+}
+
+.login-1 a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.brand:last-child {
+    margin-left: auto;
+}
+
 nav li:last-child {
     margin-left: auto;
 }
