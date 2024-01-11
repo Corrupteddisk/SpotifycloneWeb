@@ -41,6 +41,30 @@ nav ul div li {
 
 }
 
+/* login button */
+.login-1 {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 40px;
+    margin-left: auto;
+    margin-right: 13px;
+}
+
+.login-1:hover {
+    background-color: #c3c3c3;
+    text-decoration: underline #c3c3c3;
+}
+
+.login-1 a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.brand:last-child {
+    margin-left: auto;
+}
+
 nav li:last-child {
     margin-left: auto;
 }
@@ -96,6 +120,10 @@ nav li:last-child {
     position: absolute !important;
     right: 0 !important;
     top: 0 !important;
+}
+
+.homelink{
+    color: rgb(147, 140, 140);
 }
 
 
@@ -184,12 +212,24 @@ nav li:last-child {
     justify-content: space-between;
     align-items: center;
     border-radius: 35px;
+    cursor: pointer;
 
+}
+
+.songItem.currentSongItem {
+    background: rgba(0, 0, 0, 0.62);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.1px);
+    -webkit-backdrop-filter: blur(8.1px);
+    border: 1px solid rgba(0, 0, 0, 0.52);
+    color: #ffffff;
+    text-shadow: 0 0 20px #ffffff;
+    -webkit-text-stroke-width: thin;
 }
 
 .songItem img {
     width: 43px;
-    margin: 0 23px;
+    margin: 0 23px 0 5px;
     border-radius: 32px;
 
 }
@@ -202,17 +242,26 @@ nav li:last-child {
     cursor: pointer;
 }
 
+.songItemPlay {
+    pointer-events: none;
+}
+
 .songInfo {
     position: relative;
     width: 60%;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
     font-size: 1.5rem;
     position: relative;
 
     font-family: 'Varela Round', sans-serif;
 
+}
+
+.songInfo>div {
+    display: flex;
+    align-items: center;
 }
 
 body {
@@ -274,19 +323,141 @@ h1 {
     width: 500px;
     border-radius: 20px;
 }
+.arijit-pic{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
 
-.arijit-pic>img {
+
+/*  */
+.myCard {
+    background-color: transparent;
+    width: max-content;
+    height: max-content;
+    perspective: 1000px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.innerCard {
+    position: relative;
+    width: 502px;
+    height: 502px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.myCard:hover .innerCard {
+    transform: rotateY(180deg);
+}
+
+.frontSide,
+.backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 1rem;
+    color: white;
+    box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+
+.frontSide>img{
     height: 500px;
-    border-radius: 15px;
-    margin-right: 20px;
-    margin-left: 5px;
+    width: max-content;
+    border-radius: 1rem;
 }
-footer{
-    background-color: black;
-width: 100%;
+.frontSide,
+.frontSide::before {
+    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(30 215 96) 46%, rgb(255, 204, 112) 100%);
 }
 
-.panel2{
+.backSide,
+.backSide::before {
+    background-image: linear-gradient(160deg, #80c019 0%, #1ed760 100%);
+}
+
+
+.backSide {
+    transform: rotateY(180deg);
+}
+.backSide>p{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    text-align: start;
+    font-size: 1.2rem;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.3;
+}
+
+.frontSide::before,
+.backSide::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    content: '';
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1em;
+    filter: blur(20px);
+    animation: animate 5s linear infinite;
+}
+.frontSide::before{
+    width: 100%;
+    height: 100%;
+}
+.backSide::before{
+    width: 105%;
+    height: 105%;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0.3;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+/*  */
+
+
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+.panel2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -338,7 +509,7 @@ ul li {
     list-style-type: none;
     cursor: pointer;
     color: rgb(147, 140, 140);
-    margin-top: 15px ;
+    margin-top: 15px;
 }
 
 ul li:hover {
@@ -360,10 +531,11 @@ ul li:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(168, 164, 164,0.5);
+    background-color: rgba(168, 164, 164, 0.5);
     margin: 9px 9px;
 }
-.icon_border :hover{
+
+.icon_border :hover {
     transform: scale(1.2);
     transition: ease 0.5s;
     border-radius: 100%;
@@ -394,33 +566,19 @@ ul li:hover {
 .social-icons i:hover {
     color: rgba(255, 255, 255, 0.500);
 }
-.panel3{
+
+.panel3 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.panel3 p{
-    color:  white;
+
+.panel3 p {
+    color: white;
 }
 
-@media (max-width:785px){
-    .panel2{
-        flex-direction: column;
-    }
-    .foot{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-  
-    }
-    .company ul{
-        text-align: center;
-    }
-    .company ul li{
-        text-align: center;
-    }
-}
+
+
 @media only screen and (max-width: 1100px) {
     body {
         background-color: red;

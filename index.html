@@ -19,10 +19,13 @@
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
             <div class="brand">
-                <li class="hideonmobile">Home</li>
+                <li class="hideonmobile"><a href="./home-page/home.html" class="homelink">Home</a></li>
                 <li class="hideonmobile">About</li>
                 <li class="hideonmobile">Support</li>
             </div>
+            <li class="login-1 brand">
+                <a href="login.html" class="login-1a">Login</a>
+            </li>
             <li class="menu" onclick="showSidebar()"><i class="material-icons" id="menu-icon">menu</i></li>
         </ul>
 
@@ -32,6 +35,7 @@
             <li class="hover_effect">Home</li>
             <li class="hover_effect">About</li>
             <li class="hover_effect">Support</li>
+            <li class="hover_effect">Login</li>
         </ul>
     </nav>
 
@@ -107,7 +111,15 @@
 
     <div class="bottom">
         <div class="songInfo">
-            <img src="playing.gif" width="55px" alt="" id="gif"> <span id="masterSongName">Tum hi Ho</span>
+            <div>
+
+                <img src="playing.gif" width="55px" alt="" id="gif">
+                <span id="masterSongName">Tum hi Ho</span>
+            </div>
+            <div id="timeDuration">
+                <span id="songCurrTime">00:00</span>
+                <span id="songTotalTime">00:00</span>
+            </div>
         </div>
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
         <div class="icons">
@@ -124,22 +136,25 @@
         <h1>ARIJIT SINGH</h1>
         <div class="arijit-singh">
 
-            <div class="arijit-details">
-                <div class="arijit-about">
-
-                    <br><br><br><br>
-                    <p>Arijit Singh, born on April 25, 1987, in West Bengal, India, is a highly acclaimed playback
-                        singer in the Bollywood music industry. Known for his soulful and emotive voice, Arijit gained
-                        widespread recognition with his debut song "Phir Mohabbat" from the movie Murder 2 in 2011.
-                        Since then, he has become a dominant force in the Indian music scene, delivering numerous
-                        chart-topping hits. His versatile singing style encompasses various genres, making him a
-                        sought-after artist for composers. Arijit has received numerous awards for his contributions to
-                        music, earning a dedicated fan base for his impactful and heartfelt renditions.</p>
-                </div>
-
-            </div>
             <div class="arijit-pic">
-                <img src="./covers/arijit.jpg" alt="">
+                <div class="myCard">
+                    <div class="innerCard">
+                        <div class="frontSide">
+                             <img src="./covers/arijit.jpg" alt="">
+                        </div>
+                        <div class="backSide">
+                            <p>Arijit Singh, born on April 25, 1987, in West Bengal, India, is a highly acclaimed playback
+                                singer in the Bollywood music industry. Known for his soulful and emotive voice, Arijit gained
+                                widespread recognition with his debut song "Phir Mohabbat" from the movie Murder 2 in 2011.
+                                Since then, he has become a dominant force in the Indian music scene, delivering numerous
+                                chart-topping hits. His versatile singing style encompasses various genres, making him a
+                                sought-after artist for composers. Arijit has received numerous awards for his contributions to
+                                music, earning a dedicated fan base for his impactful and heartfelt renditions.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+               
             </div>
         </div>
     </div>

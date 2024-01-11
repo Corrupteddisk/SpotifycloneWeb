@@ -9,6 +9,7 @@ let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
+
 let songs = [
     { songName: "Tum hi Ho ", filePath: "songs/1.mp3", coverPath: "covers/tum-hi-ho.jpg" },
     { songName: "Khamosiyan", filePath: "songs/2.mp3", coverPath: "covers/khamoshiyan.jpg" },
@@ -27,6 +28,8 @@ songItems.forEach((element, i) => {
     element.getElementsByClassName("songName")[0].innerText = songs[i].songName;
 })
 
+document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
+document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
 
 // Handle play/pause click
 masterPlay.addEventListener('click', () => {
@@ -70,28 +73,31 @@ const makeAllPlays = () => {
     })
 }
 
-Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) => {
+
+songItems.forEach((element) => {
     element.addEventListener('click', (e) => {
         if (document.getElementsByClassName("playing")[0]) {
             document.getElementsByClassName("playing")[0].classList.remove("playing");
         }
-        if (e.target.classList.contains("fa-pause-circle")) {
+        if (e.target.getElementsByClassName("songItemPlay")[0].classList.contains("fa-pause-circle")) {
             makeAllPlays();
-            songIndex = parseInt(e.target.id);
+            songIndex = parseInt(e.target.getElementsByClassName("songItemPlay")[0].id);
             audioElement.pause();
             gif.style.opacity = 0;
-            e.target.classList.add("paused");
+            e.target.getElementsByClassName("songItemPlay")[0].classList.add("paused");
             masterPlay.classList.remove('fa-pause-circle');
             masterPlay.classList.add('fa-play-circle');
 
 
         }
-        else if (e.target.classList.contains("fa-play-circle")) {
+        else if (e.target.getElementsByClassName("songItemPlay")[0].classList.contains("fa-play-circle")) {
             makeAllPlays();
-            if (!e.target.classList.contains("paused")) {
-
-                songIndex = parseInt(e.target.id);
+            if (!e.target.getElementsByClassName("songItemPlay")[0].classList.contains("paused")) {
+                document.querySelectorAll(".songItem")[songIndex].classList.remove("currentSongItem")
+                songIndex = parseInt(e.target.getElementsByClassName("songItemPlay")[0].id);
                 audioElement.src = `songs/${songIndex + 1}.mp3`;
+                document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
+                document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
                 masterSongName.innerText = songs[songIndex].songName;
                 audioElement.currentTime = 0;
 
@@ -100,9 +106,9 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
             if (document.getElementsByClassName("paused")[0]) {
                 document.getElementsByClassName("paused")[0].classList.remove("paused");
             }
-            e.target.classList.add("playing");
-            e.target.classList.remove('fa-play-circle');
-            e.target.classList.add('fa-pause-circle');
+            e.target.getElementsByClassName("songItemPlay")[0].classList.add("playing");
+            e.target.getElementsByClassName("songItemPlay")[0].classList.remove('fa-play-circle');
+            e.target.getElementsByClassName("songItemPlay")[0].classList.add('fa-pause-circle');
             audioElement.play();
             gif.style.opacity = 1;
             masterPlay.classList.remove('fa-play-circle');
@@ -114,6 +120,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
 document.getElementById('next').addEventListener('click', () => {
     document.querySelectorAll(".songItemPlay")[songIndex].classList.remove('fa-pause-circle')
     document.querySelectorAll(".songItemPlay")[songIndex].classList.add('fa-play-circle')
+    document.querySelectorAll(".songItem")[songIndex].classList.remove("currentSongItem")
     if (document.getElementsByClassName("paused")[0]) {
         document.getElementsByClassName("paused")[0].classList.remove("paused");
     }
@@ -129,6 +136,8 @@ document.getElementById('next').addEventListener('click', () => {
     }
 
     audioElement.src = `songs/${songIndex + 1}.mp3`;
+    document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
+    document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -143,6 +152,7 @@ document.getElementById('next').addEventListener('click', () => {
 document.getElementById('previous').addEventListener('click', () => {
     document.querySelectorAll(".songItemPlay")[songIndex].classList.remove('fa-pause-circle')
     document.querySelectorAll(".songItemPlay")[songIndex].classList.add('fa-play-circle')
+    document.querySelectorAll(".songItem")[songIndex].classList.remove("currentSongItem")
     if (document.getElementsByClassName("paused")[0]) {
         document.getElementsByClassName("paused")[0].classList.remove("paused");
     }
@@ -156,6 +166,8 @@ document.getElementById('previous').addEventListener('click', () => {
         songIndex -= 1;
     }
     audioElement.src = `songs/${songIndex + 1}.mp3`;
+    document.getElementById("songTotalTime").innerText = "/"+ document.querySelectorAll(".timestamp")[songIndex].innerText
+    document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
     masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
@@ -165,3 +177,12 @@ document.getElementById('previous').addEventListener('click', () => {
     document.querySelectorAll(".songItemPlay")[songIndex].classList.add('fa-pause-circle')
     document.querySelectorAll(".songItemPlay")[songIndex].classList.add('playing')
 })
+
+let min , sec
+setInterval(displaySongTime,1000)
+function displaySongTime(){
+    min = Math.floor(audioElement.currentTime/60)
+    sec = Math.floor(audioElement.currentTime%60)
+    
+    document.getElementById("songCurrTime").innerText =  ((min>=10)?sec : ("0"+ min)) + ":" + ((sec>=10)?sec : ("0"+ sec))
+}
