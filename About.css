@@ -24,7 +24,7 @@ header{
 
 }
 .logo{
-    height: 65px;
+    height: 58px;
     width: 173px;
     margin-left: 20px;
 }
@@ -162,11 +162,6 @@ ul li {
     cursor: pointer;
     color: rgb(147, 140, 140);
     margin-top: 15px;
-}
-
-ul li:hover {
-    color: white;
-    text-decoration: underline;
 }
 
 .main-head {
