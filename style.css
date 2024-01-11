@@ -566,3 +566,12 @@ ul li:hover {
         width: 100%;
     }
 }
+#about{
+   color: rgb(147, 140, 140);
+   text-decoration: none;
+}
+#about:hover{
+    text-decoration: underline;
+    color: white;
+
+}
