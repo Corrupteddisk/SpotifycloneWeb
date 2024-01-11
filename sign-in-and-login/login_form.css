@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    /* background-color: aqua; */
+    border-radius: 20px;
+}
+
+.vid{
+    position: relative;
+    height: 20vh;
+    width: 20vw;
+}
+
+.vid > video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    
+}
+
+p{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.login-box{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* left: 35%; */
+    height: 90vh;
+    min-width: 30vw;
+    background-color: rgba(17, 17, 17, 1);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.login-options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+hr{
+    background-color: aqua;
+    width: 20vw;
+}
+
+button{
+    /* position: absolute; */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    top: 10px;
+    width: 20vw;
+    height: 7vh;
+    border-radius: 30px;
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=password] {
+    width: 20vw;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: gray;
+}
+
+.login-button > button{
+    background-color: #1ab26b;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+  }
+  
+  input:checked + .slider {
+    background-color: #1ab26b;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #1ab26b;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+.remember-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.remember-me > p{
+    font-size: 1.2rem;
+}
+
+.lform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: black;
+}
+
+::-webkit-scrollbar-thumb{
+    /* background: #1AB26B; */
+    background: transparent;
+    border-radius: 10px;
+}
+
+.guitar{
+    position: absolute;
+    height: 100vh;
+}
+
+.one{
+    position: fixed;
+    left: 0px;
+}
+
+.two{
+    position: fixed;
+    right: 0px;
+}
+
+button[type=submit]{
+    background-color: #1ab26b;
+    font-size: 20px;
+}
+
+.log{
+    display: flex;
+    justify-content: space-between;
+}
+
+.log > p, .log > a > p{
+    font-size: 15px;
+    color: #1ab26b;
+}
+
+a:hover{
+    cursor: pointer;
+}
