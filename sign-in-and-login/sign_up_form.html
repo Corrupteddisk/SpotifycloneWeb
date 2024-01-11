@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up</title>
+    <link rel="stylesheet" href="sign_up_form.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="vid">
+            <video src="./Spotify.mp4" autoplay loop muted></video>
+        </div>
+    </div>
+    <br>
+    <div class="login-header" data-aos="fade-up">
+        <p>Signup to start listening</p>
+    </div>
+    
+    <br>
+    <div class="login-box" data-aos="zoom-in">
+        
+        
+        <form name="loginForm" class="lform">
+        <div class="container">
+            <label for="uname"><b>Username or Email</b></label>
+            <input type="text" placeholder="Enter Username or Email" name="uname" required>
+            <label for="psw"><b>Password</b></label>
+            <div class="passw">
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <i class="fa fa-eye" id="toggle-password"></i>
+            </div>
+        </div>
+        <div class="use-phn">
+            <a><p><u>Use Phone Instead</u></p></a>
+            <a><p><u>Forgot password?</u></p></a>
+        </div>
+
+        <div class="login-button">
+            <a href=""><button type="submit" onclick="return validateForm()">Next</button></a>
+        </div>
+        <div class="hr-line">
+            <hr>
+            <p>or</p>
+            <hr>
+        </div>
+        
+    <div class="login-options">
+
+        <button> <img src="./google.png" height="25px" width="25px" alt=""> Continue with Google</button>
+
+        <button> <img src="./facebook.png" height="30px" width="30px" alt=""> Continue with Facebook</button>
+
+        <button> <img src="./apple.png" height="25px" width="22px" alt=""> Continue with Apple</button>
+    </div>
+    <div class="log">
+        <p>Already have an account?</p>
+        <a href="./login_form.html"><p><u>Log in now</u></p></a>
+    </div>
+</div>
+    
+    
+</form>
+
+<img src="./guitar-1.png" class="guitar one" alt="">
+<img src="./guitar-2.png" class="guitar two" alt="">
+</body>
+<!-- <script src="./login_form.js"></script> -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</html>

@@ -43,17 +43,34 @@ nav ul div li {
 
 /* login button */
 .login-1 {
+    position: absolute;
     display: flex;
-    background-color: #ffffff;
-    border-radius: 40px;
-    margin-left: auto;
-    margin-right: 13px;
+    gap: 20px;
+    right: 1.5rem;
 }
 
-.login-1:hover {
+.login-1 > a > button{
+    padding: 10px;
+    border-radius: 30px;
+    width: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.login-1 > a > button:hover{
+    cursor: pointer;
+}
+
+.bu-1{
+    background-color: #1ed760;
+    color: #ffffff;
+}
+
+/* .login-1:hover {
     background-color: #c3c3c3;
     text-decoration: underline #c3c3c3;
-}
+} */
 
 .login-1 a {
     text-decoration: none;
