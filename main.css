@@ -24,6 +24,17 @@ body {
     width: 130px;
 }
 
+.navigation {
+    width: 280px;
+    height: 150px;
+    background: rgba(94, 94, 94, 0.372);
+    border: 1px solid #000;
+    padding-left: 20px;
+    border-radius: 7px;
+    padding-bottom: 10px;
+    margin-top: 6px;
+}
+
 .sidebar .navigation ul {
     list-style: none;
     margin-top: 20px;
@@ -51,7 +62,7 @@ body {
 
 .sidebar .policies {
     position: absolute;
-    bottom: 100px;
+    top: 540px;
 }
 
 .sidebar .policies ul {
@@ -60,6 +71,9 @@ body {
 
 .sidebar .policies ul li {
     padding-bottom: 5px;
+    display: inline;
+    justify-content: space-between;
+    margin-right: 15px;
 }
 
 .sidebar .policies ul li a {
@@ -71,6 +85,25 @@ body {
 
 .sidebar .policies ul li a:hover {
     text-decoration: underline;
+}
+
+.language {
+    position: absolute;
+    top :600px;
+}
+
+.lang-button  {
+    border: solid rgb(221, 221, 221) 2px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+    background-color: #000;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+}
+.lang-button:hover {
+    background-color: #2d2d2ded;
 }
 
 .main-container {
