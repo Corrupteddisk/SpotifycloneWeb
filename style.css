@@ -607,11 +607,11 @@ ul li:hover {
         width: 100%;
     }
 }
-#about{
+#about,#main{
    color: rgb(147, 140, 140);
    text-decoration: none;
 }
-#about:hover{
+#about:hover,#main:hover{
     text-decoration: underline;
     color: white;
 
