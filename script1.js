@@ -21,6 +21,12 @@ let songs = [
     { songName: "Kabhi jo Badal Barse", filePath: "songs/8.mp3", coverPath: "covers/kabhi-jo-badal.jpg" },
     { songName: "Chal Wahan Jate he", filePath: "songs/9.mp3", coverPath: "covers/Chal-Wahan-Jaate-Hain.jpg" },
     { songName: "Sooraj Dooba hein", filePath: "songs/10.mp3", coverPath: "covers/Sooraj-Dooba-Hain.jpg" },
+    { songName: "Fatafati Football", filePath: "songs/11.mp3", coverPath: "covers/fatafati-football.jpg" },
+    { songName: "Bojhena Shey Bojhena", filePath: "songs/12.mp3", coverPath: "covers/bojhena-se-bojhena.jpeg" },
+    { songName: "Tomake Chai", filePath: "songs/13.mp3", coverPath: "covers/tomake-chai.jpg" },
+    { songName: "Asotama Saggamaya", filePath: "songs/14.mp3", coverPath: "covers/asotama-saggamaya.jpg" },
+    { songName: "Jabo Na Jabo Na Fire", filePath: "songs/15.mp3", coverPath: "covers/jabo-na-jabo-na-fire.jpg" },
+    { songName: "Eksho Bochor Dhore", filePath: "songs/16.mp3", coverPath: "covers/eksho-bochor-dhore.jpg" },
 ]
 
 songItems.forEach((element, i) => {
