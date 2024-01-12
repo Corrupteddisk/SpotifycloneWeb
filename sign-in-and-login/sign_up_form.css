@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body{
     justify-content: center;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,28 +24,28 @@ body{
     border-radius: 20px;
 }
 
-.vid{
+.vid {
     position: relative;
     height: 20vh;
     width: 20vw;
 }
 
-.vid > video {
+.vid>video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit:cover;
-    
+    object-fit: cover;
+
 }
 
-p{
+p {
     font-size: 3rem;
     text-align: center;
 }
 
-.login-box{
+.login-box {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -59,55 +59,56 @@ p{
     gap: 20px;
 }
 
-.login-options{
+.login-options {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-.hr-line{
+.hr-line {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.hr-line > p{
+.hr-line>p {
     font-size: 1rem;
 }
 
-hr{
+hr {
     background-color: white;
     width: 25%;
     height: 1%;
 }
 
-.use-phn{
+.use-phn {
     display: flex;
     justify-content: space-between;
 }
 
-.log{
+.log {
     display: flex;
     justify-content: space-between;
 }
 
-.log > p, .log > a > p{
+.log>p,
+.log>a>p {
     font-size: 15px;
     color: #1ab26b;
 }
 
-.use-phn > a > p{
+.use-phn>a>p {
     font-size: 15px;
     color: #1ab26b;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
 }
 
-button{
+button {
     /* position: absolute; */
     display: flex;
     gap: 10px;
@@ -120,12 +121,13 @@ button{
     background-color: black;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
 }
 
-input[type=text], input[type=password] {
+input[type=text],
+input[type=password] {
     width: 20vw;
     padding: 12px 20px;
     margin: 8px 0;
@@ -137,7 +139,7 @@ input[type=text], input[type=password] {
     color: gray;
 }
 
-.login-button > button{
+.login-button>button {
     background-color: #1ab26b;
 }
 
@@ -147,14 +149,14 @@ input[type=text], input[type=password] {
     width: 60px;
     height: 34px;
 }
-  
-  .switch input {
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -165,9 +167,9 @@ input[type=text], input[type=password] {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 20px;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -178,34 +180,34 @@ input[type=text], input[type=password] {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 20px;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #1ab26b;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #1ab26b;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
+}
 
-.remember-me{
+.remember-me {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.remember-me > p{
+.remember-me>p {
     font-size: 1.2rem;
 }
 
-.lform{
+.lform {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -219,36 +221,165 @@ input[type=text], input[type=password] {
     cursor: pointer;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: black;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     /* background: #1AB26B; */
     background: transparent;
     border-radius: 10px;
 }
 
-.guitar{
+.guitar {
     position: absolute;
     height: 100vh;
 }
 
-.one{
+.one {
     position: fixed;
     left: 0px;
 }
 
-.two{
+.two {
     position: fixed;
     right: 0px;
 }
 
-button[type=submit]{
+button[type=submit] {
     background-color: #1ab26b;
     font-size: 20px;
+}
+
+.login-box {
+    width: max-content;
+    height: 70vh;
+    padding: 0 10px;
+}
+
+.login-header p {
+    font-size: x-large;
+}
+
+.guitar {
+    z-index: -1;
+}
+
+.header {
+    height: 6vh;
+}
+
+.vid {
+    height: 100%;
+}
+
+.lform {
+    height: 100%;
+    gap: unset;
+    justify-content: space-evenly;
+    /* width: 100%; */
+    padding: 0px 15px;
+    box-sizing: border-box;
+}
+
+.lform>.container {
+    font-size: small;
+    gap: 10px;
+    padding: unset;
+}
+
+.lform>.container input {
+    width: 100%;
+    margin: unset;
+    padding: 5px;
+    font-size: medium;
+}
+
+.use-phn {
+    justify-content: space-around;
+}
+.login-options{
+    gap: unset;
+}
+.login-options button{
+    font-size: medium;
+    margin-top: 15px;
+}
+
+@media screen and (max-width:650px) {
+    .use-phn>a>p {
+        font-size: x-small;
+    }
+
+    .log p,
+    .log a p {
+        font-size: x-small;
+    }
+
+    .login-options button{
+        font-size: small;
+    }
+
+
+}
+
+
+.login-button {
+    width: 100%;
+
+}
+
+.login-button {
+    width: 100%;
+    /* display: inline-block; */
+    /* padding: 5px 16px; */
+    box-sizing: border-box;
+}
+
+.login-button button {
+    width: 100%;
+    box-sizing: border-box;
+    height: 5vh;
+    position: relative;
+}
+
+.login-options {
+    /* padding: 5px 15px; */
+}
+
+.login-options button {
+    width: -webkit-fill-available;
+    height: unset;
+    padding: 10px 0;
+    position: relative;
+}
+
+.login-options button>img {
+    height: 50%;
+    width: unset;
+    position: absolute;
+    left: 5%;
+}
+
+.log {
+    justify-content: space-around;
+}
+
+.container {
+    justify-content: space-around;
+}
+
+@media screen and (min-height:1100px) and (min-width:900px) {
+    .login-box {
+        height: 50vh;
+    }
+
+}
+
+.login-box{
+    min-width: max-content;
 }

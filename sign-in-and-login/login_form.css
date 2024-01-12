@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -15,7 +15,7 @@ body{
     justify-content: center;
 }
 
-.header{
+.header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,28 +24,28 @@ body{
     border-radius: 20px;
 }
 
-.vid{
+.vid {
     position: relative;
     height: 20vh;
     width: 20vw;
 }
 
-.vid > video {
+.vid>video {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit:cover;
-    
+    object-fit: cover;
+
 }
 
-p{
+p {
     font-size: 3rem;
     text-align: center;
 }
 
-.login-box{
+.login-box {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -59,19 +59,19 @@ p{
     gap: 20px;
 }
 
-.login-options{
+.login-options {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
 }
 
-hr{
+hr {
     background-color: aqua;
     width: 20vw;
 }
 
-button{
+button {
     /* position: absolute; */
     display: flex;
     gap: 10px;
@@ -84,12 +84,13 @@ button{
     background-color: black;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
 }
 
-input[type=text], input[type=password] {
+input[type=text],
+input[type=password] {
     width: 20vw;
     padding: 12px 20px;
     margin: 8px 0;
@@ -101,7 +102,7 @@ input[type=text], input[type=password] {
     color: gray;
 }
 
-.login-button > button{
+.login-button>button {
     background-color: #1ab26b;
 }
 
@@ -111,14 +112,14 @@ input[type=text], input[type=password] {
     width: 60px;
     height: 34px;
 }
-  
-  .switch input {
+
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  .slider {
+}
+
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -129,9 +130,9 @@ input[type=text], input[type=password] {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 20px;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "";
     height: 26px;
@@ -142,34 +143,34 @@ input[type=text], input[type=password] {
     -webkit-transition: .4s;
     transition: .4s;
     border-radius: 20px;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked+.slider {
     background-color: #1ab26b;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus+.slider {
     box-shadow: 0 0 1px #1ab26b;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
-  }
+}
 
-.remember-me{
+.remember-me {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.remember-me > p{
+.remember-me>p {
     font-size: 1.2rem;
 }
 
-.lform{
+.lform {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -183,50 +184,200 @@ input[type=text], input[type=password] {
     cursor: pointer;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background: black;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     /* background: #1AB26B; */
     background: transparent;
     border-radius: 10px;
 }
 
-.guitar{
+.guitar {
     position: absolute;
     height: 100vh;
 }
 
-.one{
+.one {
     position: fixed;
     left: 0px;
 }
 
-.two{
+.two {
     position: fixed;
     right: 0px;
 }
 
-button[type=submit]{
+button[type=submit] {
     background-color: #1ab26b;
     font-size: 20px;
 }
 
-.log{
+.log {
     display: flex;
     justify-content: space-between;
 }
 
-.log > p, .log > a > p{
+.log>p,
+.log>a>p {
     font-size: 15px;
     color: #1ab26b;
 }
 
-a:hover{
+a:hover {
     cursor: pointer;
+}
+
+/* @media screen and (max-width:850px) { */
+
+.header {
+    height: 6vh;
+}
+
+.vid {
+    height: inherit;
+}
+
+.login-header>p {
+    font-size: 2rem;
+}
+
+.login-box {
+    min-width: max-content;
+    height: 70vh;
+}
+
+.login-options {
+    gap: unset;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 40%;
+    justify-content: space-around;
+}
+
+.login-options>button {
+    width: 100%;
+    position: relative;
+    height: 25%;
+    /* margin: 10px 0; */
+    margin-top: 10px;
+    font-size: small;
+}
+
+.login-options>button>img {
+    height: 50%;
+    width: unset;
+    position: absolute;
+    left: 5%;
+}
+
+.lform {
+    padding: 0 1rem;
+    box-sizing: border-box;
+    height: 60%;
+    width: 100%;
+    gap: unset;
+    justify-content: space-evenly;
+    /* font-size: x-small; */
+}
+
+.lform>.container input {
+    width: -webkit-fill-available;
+    padding: 8px 20px;
+}
+
+
+
+.login-button button {
+    font-size: 1rem;
+    width: 100%;
+    height: 5vh;
+}
+
+input:checked+.slider:before {
+    right: 2px;
+    left: unset;
+    -webkit-transform: unset;
+    -ms-transform: unset;
+    transform: unset;
+} 
+
+
+
+.guitar {
+    z-index: -1;
+}
+
+.login-box {
+    width: max-content;
+    padding: 0 .5rem;
+}
+body{
+    height: 100vh;
+}
+
+@media screen and (min-height:1100px) and (min-width:900px) {
+    .login-box {
+        height: 50vh;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    .log>p,
+    .log>a>p {
+        font-size: small;
+    }
+
+    .login-button button {
+        font-size: 1rem;
+    }
+    .remember-me>p {
+        font-size: x-small;
+    }
+    .lform {
+        font-size: x-small;
+    }
+    .remember-me {
+        justify-content: flex-start;
+    }
+    
+    .switch {
+        width: unset;
+        aspect-ratio: 2/1;
+        height: 90%;
+    }
+    
+    .slider::before {
+        height: 80%;
+        width: unset;
+        left: 2px;
+        bottom: 10%;
+        aspect-ratio: 1/1;
+        top: 10%;
+    }
+    
+    
+    
+    .login-button button {
+        /* font-size: 1rem; */
+        width: 100%;
+        height: 5vh;
+    }
+    
+    input:checked+.slider:before {
+        right: 2px;
+        left: unset;
+        -webkit-transform: unset;
+        -ms-transform: unset;
+        transform: unset;
+    }
+    
 }
