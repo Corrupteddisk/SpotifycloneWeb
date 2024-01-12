@@ -41,6 +41,7 @@ nav ul div li {
 
 }
 
+
 .brand:last-child {
     margin-left: auto;
 }
@@ -151,7 +152,7 @@ nav li:last-child {
 }
 
 
-@media(max-width:576px) {
+@media(max-width:667px) {
     .hideonmobile {
         display: none;
 
@@ -636,4 +637,13 @@ ul li:hover {
     .arijit-pic img {
         width: 100%;
     }
+}
+#about{
+   color: rgb(147, 140, 140);
+   text-decoration: none;
+}
+#about:hover{
+    text-decoration: underline;
+    color: white;
+
 }
