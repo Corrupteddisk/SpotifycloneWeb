@@ -116,7 +116,7 @@ nav li:last-child {
     justify-content: center;
 }
 
-.sidebar li {
+.sidebar li{
     display: flex;
     flex-direction: column;
     justify-content: center;
