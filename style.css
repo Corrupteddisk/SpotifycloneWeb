@@ -63,6 +63,42 @@ nav li:last-child {
     font-size: 1.5rem;
 }
 
+.login2 {
+    padding: 10px 4px 10px 4px;
+    border-radius: 30px;
+    width: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #1ed760;
+    text-align: center;
+
+}
+
+.login2 a {
+    color: #ffffff;
+}
+
+.signup1 {
+    padding: 10px 4px 10px 4px;
+    border-radius: 30px;
+    width: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+    text-align: center;
+}
+
+.signup1 a {
+    color: black;
+}
+
+.signup1 a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -80,7 +116,7 @@ nav li:last-child {
     justify-content: center;
 }
 
-.sidebar li{
+.sidebar li {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,6 +159,16 @@ nav li:last-child {
     color: rgb(147, 140, 140);
 }
 
+.aboutlink {
+    text-decoration: none;
+    color: rgb(147, 140, 140);
+}
+
+.aboutlink:hover {
+    color: white;
+
+}
+
 .sidebar .loginlink {
     text-decoration: none;
     color: black;
@@ -152,7 +198,7 @@ nav li:last-child {
 }
 
 
-@media(max-width:667px) {
+@media(max-width:716px) {
     .hideonmobile {
         display: none;
 
@@ -163,6 +209,48 @@ nav li:last-child {
     }
 }
 
+@media(max-width:514px) {
+    .myCard {
+        width: 100% !important;
+    }
+
+    .innerCard {
+        width: 100% !important;
+        height: 505px;
+    }
+
+}
+
+@media(max-width:412px) {
+    .backSide>p {
+        font-size: 1rem !important;
+    }
+}
+
+@media(max-width:835px) {
+    .songInfo {
+        width: 100% !important;
+    }
+
+    .bottom {
+        padding: 0 6px !important;
+    }
+}
+
+@media(max-width:502px) {
+    #gif {
+        width: 30px !important;
+    }
+
+    #masterSongName {
+        font-size: 15px !important;
+    }
+
+    #songCurrTime,
+    #songTotalTime {
+        font-size: 15px !important;
+    }
+}
 
 .hover_effect:hover {
     color: white !important;
@@ -182,10 +270,12 @@ section {
     position: relative;
 }
 
-a, a:link, a:visited {
+
+a:link,
+a:visited {
     color: #212121;
     text-decoration: none;
-}
+} */
 
 .Carousel-slider {
     height: 460px;
@@ -208,11 +298,11 @@ a, a:link, a:visited {
     position: relative;
     transform-style: preserve-3d;
     transform-origin: 0 50%;
-	perspective: 800px  !important;
+    perspective: 800px !important;
 }
 
 .slider-item {
-    box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .12);
     display: none;
     height: 300px;
     left: 0;
@@ -221,17 +311,17 @@ a, a:link, a:visited {
     top: 0;
     width: 300px;
     cursor: pointer;
-	/* border: 5px solid #ffc107; */
+    /* border: 5px solid #ffc107; */
 }
 
-.slider-item img{
+.slider-item img {
     height: 300px;
     width: 300px;
     border-radius: 10px;
 }
 
 .indicators {
-	bottom: 0;
+    bottom: 0;
     left: 50%;
     padding: 0;
     list-style-type: none;
@@ -257,7 +347,7 @@ a, a:link, a:visited {
 }
 
 .indicators .active a {
-	background: darkgray;
+    background: darkgray;
 
 }
 
@@ -276,7 +366,6 @@ a, a:link, a:visited {
 
 .bottom {
     position: sticky;
-    height: 130px;
     background-color: black;
     color: white;
     bottom: 5px;
@@ -292,6 +381,7 @@ a, a:link, a:visited {
     border: 1px solid rgba(0, 0, 0, 0.52);
     width: 90%;
     margin: auto;
+    padding: 10px;
 }
 
 .icon {
@@ -721,21 +811,36 @@ ul li:hover {
 
 @media only screen and (max-width: 1100px) {
     body {
-        background-color: red;
+        /* background-color: red; */
     }
 }
 
-@media(max-width:503px) {
+@media(max-width:514px) {
     .arijit-pic img {
         width: 100%;
     }
+
+    .innerCard {
+        width: 80vw;
+        height: unset;
+        aspect-ratio: 1;
+    }
+
+    .backSide p {
+        font-size: small;
+    }
 }
-#about,#main{
-   color: rgb(147, 140, 140);
-   text-decoration: none;
+
+#about,
+#main {
+    color: rgb(147, 140, 140);
+    text-decoration: none;
 }
-#about:hover,#main:hover{
+
+#about:hover,
+#main:hover {
     text-decoration: underline;
     color: white;
+
 
 }
