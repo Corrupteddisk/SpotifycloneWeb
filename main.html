@@ -11,6 +11,7 @@
 
 <body>
 
+
     <div class="sidebar">
         <div class="logo">
             <a href="">
@@ -58,6 +59,14 @@
 
             </ul>
         </div>
+        <div class="sideNavBar">
+            <ul>
+                <li>
+                    <a href="./sign-in-and-login/sign_up_form.html">Sign Up</a>
+                </li>
+            </ul>
+            <button type="button"> <a href="./sign-in-and-login/login_form.html">Login</a></button>
+        </div>
 
         <div class="policies">
             <ul>
@@ -78,7 +87,7 @@
                 </li>
             </ul>
         </div>
-        
+
         <div class="language">
             <button type="button" class="lang-button">English</button>
         </div>
@@ -86,10 +95,13 @@
 
     <div class="main-container">
         <div class="topbar">
-            <div class="prev-next-buttons">
-                <button type="button" class="fa fas fa-chevron-left"></button>
-                <button type="button" class="fa fas fa-chevron-right"></button>
-            </div>
+            <input type="checkbox" id="hi">
+            <label class="menu" for="hi" onclick="hamburger()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </label>
+
 
             <div class="navbar">
                 <ul>
@@ -99,13 +111,18 @@
                 </ul>
                 <button type="button"> <a href="./sign-in-and-login/login_form.html">Login</a></button>
             </div>
+            <div class="logo">
+                <a href="">
+                    <img src="./images/Spotify Logo.png" alt="Logo">
+                </a>
+            </div>
         </div>
 
         <div class="spotify-playlists">
             <h2>Spotify Playlists</h2>
 
             <div class="list">
-                <a href = "index.html" class="item" style="text-decoration: none; ">
+                <a href="index.html" class="item" style="text-decoration: none; ">
                     <img src="./covers/arijit.jpg" />
                     <div class="play">
                         <span class="fa fa-play"></span>
@@ -319,6 +336,11 @@
 
 
     <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
+    <script>
+        function hamburger() {
+            document.querySelector(".sidebar").classList.toggle("ham-open")
+        }
+    </script>
 </body>
 
 </html>
