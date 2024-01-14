@@ -270,12 +270,12 @@ section {
     position: relative;
 }
 
-
+a,
 a:link,
 a:visited {
     color: #212121;
     text-decoration: none;
-} */
+}
 
 .Carousel-slider {
     height: 460px;
@@ -842,5 +842,110 @@ ul li:hover {
     text-decoration: underline;
     color: white;
 
+}
 
+.sidebar {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 8px 32px 0 rgb(30 215 96 / 11%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.sidebar li {
+
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.sidebar a,
+.sidebar a:link,
+.sidebar a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar li {
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.sidebar div:nth-of-type(1) {
+    background: #232323;
+    width: -webkit-fill-available;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.sideNavBar #loginButton a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sideNavBar button {
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sideNavBar ul {
+    list-style: none;
+}
+
+.sideNavBar ul li {
+    margin: 0px 8px;
+    display: flex;
+    width: max-content;
+}
+
+.sideNavBar ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.sideNavBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar>div>li>a>i {
+    margin-right: 10px;
+}
+
+.diffGenre {
+    display: flex;
+    width: 100%;
+    height: max-content;
+    flex-direction: row;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.diffGenre>div {
+    width: -webkit-fill-available;
+    height: unset;
+    aspect-ratio: 1/1;
+    margin: 14px;
+    color: white;
+    text-shadow: 0 0 7px white;
+    font-family: sans-serif;
+}
+
+.diffGenre>div>img {
+    width: 100%;
 }
