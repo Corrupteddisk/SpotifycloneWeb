@@ -1,5 +1,24 @@
 # Spotify Clone - A Beginner-Friendly Web Development Project
 
+
+<p>
+   
+[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=apu52%2FSpotifycloneWeb%20&countColor=%23263759&style=flat)
+![GitHub forks](https://img.shields.io/github/forks/CorruptedDisk/SpotifycloneWeb)
+![GitHub Repo stars](https://img.shields.io/github/stars/CorruptedDisk/SpotifycloneWeb)
+![GitHub contributors](https://img.shields.io/github/contributors/CorruptedDisk/SpotifycloneWeb)
+![GitHub last commit](https://img.shields.io/github/last-commit/CorruptedDisk/SpotifycloneWeb)
+![GitHub repo size](https://img.shields.io/github/repo-size/CorruptedDisk/SpotifycloneWeb)
+![Github](https://img.shields.io/github/license/CorruptedDisk/SpotifycloneWeb)
+![GitHub issues](https://img.shields.io/github/issues/CorruptedDisk/SpotifycloneWeb)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/CorruptedDisk/SpotifycloneWeb)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/CorruptedDisk/SpotifycloneWeb)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/CorruptedDisk/SpotifycloneWeb)
+
+ </p>
+
 ## Overview
 
 Welcome to the Spotify Clone project! This is a beginner-friendly web development project aimed at creating a clone of Spotify using HTML, CSS, and JavaScript. The application showcases the top 10 best songs of Arijit Singh, utilizing the audio API in the JavaScript code to enable music playback.
