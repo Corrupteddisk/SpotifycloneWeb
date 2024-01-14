@@ -270,7 +270,7 @@ section {
     position: relative;
 }
 
-/* a,
+
 a:link,
 a:visited {
     color: #212121;
@@ -811,13 +811,23 @@ ul li:hover {
 
 @media only screen and (max-width: 1100px) {
     body {
-        background-color: red;
+        /* background-color: red; */
     }
 }
 
 @media(max-width:514px) {
     .arijit-pic img {
         width: 100%;
+    }
+
+    .innerCard {
+        width: 80vw;
+        height: unset;
+        aspect-ratio: 1;
+    }
+
+    .backSide p {
+        font-size: small;
     }
 }
 
@@ -831,5 +841,6 @@ ul li:hover {
 #main:hover {
     text-decoration: underline;
     color: white;
+
 
 }
