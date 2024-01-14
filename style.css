@@ -41,42 +41,6 @@ nav ul div li {
 
 }
 
-/* login button */
-.login-1 {
-    position: absolute;
-    display: flex;
-    gap: 20px;
-    right: 1.5rem;
-}
-
-.login-1 > a > button{
-    padding: 10px;
-    border-radius: 30px;
-    width: 100px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.login-1 > a > button:hover{
-    cursor: pointer;
-}
-
-.bu-1{
-    background-color: #1ed760;
-    color: #ffffff;
-}
-
-/* .login-1:hover {
-    background-color: #c3c3c3;
-    text-decoration: underline #c3c3c3;
-} */
-
-.login-1 a {
-    text-decoration: none;
-    color: black;
-    padding: 10px;
-}
 
 .brand:last-child {
     margin-left: auto;
@@ -108,7 +72,7 @@ nav li:last-child {
     z-index: 999;
     background-color: rgba(255, 255, 255, 0.2);
     color: black;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     box-shadow: -10px 0 10ox rgba(0, 0, 0, 0, 1);
     display: none;
     flex-direction: column;
@@ -129,7 +93,13 @@ nav li:last-child {
     font-size: 1.5rem;
     position: relative;
     cursor: pointer;
+    color: black;
 }
+
+.sidebar li:hover {
+    text-decoration: none;
+}
+
 
 .close-menu {
     justify-content: center !important;
@@ -137,12 +107,34 @@ nav li:last-child {
     position: absolute !important;
     right: 0 !important;
     top: 0 !important;
+    margin-top: 3px !important;
 }
 
-.homelink{
+.homelink1 {
     color: rgb(147, 140, 140);
 }
 
+.homelink1:hover {
+    color: white;
+}
+
+.homelink2 {
+    text-decoration: none;
+    color: rgb(147, 140, 140);
+}
+
+.sidebar .loginlink {
+    text-decoration: none;
+    color: black;
+}
+
+.loginlink:hover {
+    color: white;
+}
+
+.homelink2:hover {
+    color: white;
+}
 
 .menu {
     cursor: pointer;
@@ -159,9 +151,22 @@ nav li:last-child {
     font-size: 48px;
 }
 
+
+@media(max-width:667px) {
+    .hideonmobile {
+        display: none;
+
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
+
 .hover_effect:hover {
-    color: blue;
-    text-decoration: underline;
+    color: white !important;
+    text-decoration: underline !important;
 }
 
 .container {
@@ -340,7 +345,8 @@ h1 {
     width: 500px;
     border-radius: 20px;
 }
-.arijit-pic{
+
+.arijit-pic {
     height: max-content;
     width: 100%;
     display: flex;
@@ -396,11 +402,12 @@ h1 {
     font-weight: 700;
 }
 
-.frontSide>img{
+.frontSide>img {
     height: 500px;
     width: max-content;
     border-radius: 1rem;
 }
+
 .frontSide,
 .frontSide::before {
     background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(30 215 96) 46%, rgb(255, 204, 112) 100%);
@@ -415,7 +422,8 @@ h1 {
 .backSide {
     transform: rotateY(180deg);
 }
-.backSide>p{
+
+.backSide>p {
     height: 100%;
     width: 100%;
     display: flex;
@@ -442,11 +450,13 @@ h1 {
     filter: blur(20px);
     animation: animate 5s linear infinite;
 }
-.frontSide::before{
+
+.frontSide::before {
     width: 100%;
     height: 100%;
 }
-.backSide::before{
+
+.backSide::before {
     width: 105%;
     height: 105%;
 }
@@ -464,6 +474,7 @@ h1 {
         opacity: 0.3;
     }
 }
+
 
 /*  */
 
@@ -594,7 +605,27 @@ ul li:hover {
     color: white;
 }
 
+@media (max-width:785px) {
+    .panel2 {
+        flex-direction: column;
+    }
 
+    .foot {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    .company ul {
+        text-align: center;
+    }
+
+    .company ul li {
+        text-align: center;
+    }
+}
 
 @media only screen and (max-width: 1100px) {
     body {

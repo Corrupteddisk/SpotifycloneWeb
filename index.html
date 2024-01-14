@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"><a href="main.html" target="_blank" id="main">Spotify</a> </li>
             <div class="brand">
@@ -23,10 +23,7 @@
                 <!-- <li class="hideonmobile">About</li> -->
                 <li class="hideonmobile"><a href="./about/about.html" id="about" target="_blank">About</a></li>
                 <li class="hideonmobile">Support</li>
-            </div>
-            <div class="login-1 brand">
-                <a href="./sign-in-and-login/sign_up_form.html"><button class="bu-1">Signup</button></a>
-                <a href="./sign-in-and-login/login_form.html"><button class="bu-2">Login</button></a>
+                <li><a href="login.html" class="">Login</a></li>
             </div>
             <li class="menu" onclick="showSidebar()"><i class="material-icons" id="menu-icon">menu</i></li>
         </ul>
@@ -39,8 +36,32 @@
             <a href="support.html" class="hover_effect" >Support</a>
             <li class="hover_effect">Login</li>
         </ul>
-    </nav>
+    </nav> -->
+     <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify"> Spotify</li>
+            <div class="brand">
+                <li class="hideonmobile"><a href="./home-page/home.html" class="homelink1">Home</a></li>
+                <li class="hideonmobile">About</li>
+                <li class="hideonmobile">Support</li>
+                <li class="hideonmobile Login1"><a href="./sign-in-and-login/sign_up_form.html"
+                        class="homelink2">Login</a></li>
+                <li class="hideonmobile Login1"><a href="./sign-in-and-login/login_form.html" class="homelink2">Sign
+                        up</a></li>
+            </div>
+            <li class="menu" onclick="showSidebar()"><i class="material-icons" id="menu-icon">menu</i></li>
+        </ul>
 
+        <ul class="sidebar">
+            <li class="menu close-menu" onclick="hideSidebar()"><i class="material-icons" id="menu-icon-close">close</i>
+            </li>
+            <li class="hover_effect">Home</li>
+            <li class="hover_effect">About</li>
+            <li class="hover_effect">Support</li>
+            <li class="hover_effect"><a href="./sign-in-and-login/sign_up_form.html" class="loginlink">Login</a></li>
+            <li class="hover_effect"><a href="./sign-in-and-login/login_form.html" class="loginlink">Sign up</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
         <div class="songList">
