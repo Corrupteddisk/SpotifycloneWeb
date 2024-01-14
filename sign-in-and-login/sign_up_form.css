@@ -8,7 +8,8 @@
 }
 
 body {
-    background-color: black;
+    /* background-color: rgb(16, 116, 3); */
+    background-color: black;;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +20,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 15vh;
-    /* background-color: aqua; */
+    height: 4.4em;
+    background-color: aqua;
     border-radius: 20px;
+    margin: 4vh;
 }
 
 .vid {
@@ -45,19 +47,6 @@ p {
     text-align: center;
 }
 
-.login-box {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* left: 35%; */
-    height: 90vh;
-    min-width: 30vw;
-    background-color: rgba(17, 17, 17, 1);
-    border-radius: 20px;
-    gap: 20px;
-}
 
 .login-options {
     display: flex;
@@ -255,11 +244,6 @@ button[type=submit] {
     font-size: 20px;
 }
 
-.login-box {
-    width: max-content;
-    height: 70vh;
-    padding: 0 10px;
-}
 
 .login-header p {
     font-size: x-large;
@@ -269,9 +253,6 @@ button[type=submit] {
     z-index: -1;
 }
 
-.header {
-    height: 6vh;
-}
 
 .vid {
     height: 100%;
@@ -347,9 +328,6 @@ button[type=submit] {
     position: relative;
 }
 
-.login-options {
-    /* padding: 5px 15px; */
-}
 
 .login-options button {
     width: -webkit-fill-available;
@@ -373,13 +351,137 @@ button[type=submit] {
     justify-content: space-around;
 }
 
-@media screen and (min-height:1100px) and (min-width:900px) {
-    .login-box {
-        height: 50vh;
+
+.login-box{
+    min-width: max-content;
+}
+
+
+/* ============================ */
+.topcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 20px;
+    width:fit-content;
+    justify-content: space-between;
+    min-width:60vw;
+    flex-wrap: wrap;
+    height:fit-content;
+    /* border:4px solid red; */
+    overflow: hidden;
+    transition: cubic-bezier(0.87,-0.02, 0, 1.06) 0.2s;
+    border-radius: 30px;
+}
+
+.topcard:hover{
+    box-shadow: 0px 0px 30px rgb(65, 125, 65);
+}
+
+
+
+.leftcard, .rightcard{
+    width:50%;
+}
+
+.leftcard{
+    background: rgb(23, 30, 23);
+    border-radius: 30px 0px 0px 30px;
+    padding:auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.rightcard{
+    
+    border-radius: 0px 30px 30px 0px;
+    z-index: -1;
+}
+
+#log-bg{
+    height: 40vw;
+    background-image: url("loginbg.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+.login-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* left: 35%; */
+    background-color: rgba(17, 17, 17, 1);
+    border-radius: 20px;
+    margin:auto;
+    width: 80%;
+    height:90%;
+    transition: ease-in-out 2s;
+}
+
+/* .login-box:hover{
+    transition: ease-in-out 2s;
+    box-shadow: 0px 0px 20px white;
+} */
+
+
+.logo-photo{
+    background-image: url("favicon.png");
+    width:15vw;
+    min-width:60px;
+    height: 15vw;
+    min-height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-photo:hover{
+    cursor:pointer;
+}
+
+@media screen and (min-width:320px) and (max-width: 1100px) {
+    .topcard{
+        width:60vw;
+        background-image: url("loginbg.png");
+        background-size: cover;
+        border-radius: 10px;
+        height: fit-content;
+        padding:6%;
+        width: fit-content;
+    }
+
+    .leftcard{
+        border: 2px solid red;
+        border-radius: 10px;
+        margin:auto;
+        width:100%;
+        height: 100%;
+        scale:1;
+        padding:4%;
+    }
+
+    .login-box{
+        padding:4%;
+    }
+
+    .rightcard{
+        display: none;
     }
 
 }
 
-.login-box{
-    min-width: max-content;
+@media screen and (min-width:1101px) and (max-width: 1320px) {
+    .login-box{
+        scale:0.9;
+    }
+
 }
