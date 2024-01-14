@@ -63,6 +63,42 @@ nav li:last-child {
     font-size: 1.5rem;
 }
 
+.login2 {
+    padding: 10px 4px 10px 4px;
+    border-radius: 30px;
+    width: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #1ed760;
+    text-align: center;
+
+}
+
+.login2 a {
+    color: #ffffff;
+}
+
+.signup1 {
+    padding: 10px 4px 10px 4px;
+    border-radius: 30px;
+    width: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+    text-align: center;
+}
+
+.signup1 a {
+    color: black;
+}
+
+.signup1 a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
@@ -123,6 +159,16 @@ nav li:last-child {
     color: rgb(147, 140, 140);
 }
 
+.aboutlink {
+    text-decoration: none;
+    color: rgb(147, 140, 140);
+}
+
+.aboutlink:hover {
+    color: white;
+
+}
+
 .sidebar .loginlink {
     text-decoration: none;
     color: black;
@@ -152,7 +198,7 @@ nav li:last-child {
 }
 
 
-@media(max-width:667px) {
+@media(max-width:716px) {
     .hideonmobile {
         display: none;
 
@@ -163,6 +209,48 @@ nav li:last-child {
     }
 }
 
+@media(max-width:514px) {
+    .myCard {
+        width: 100% !important;
+    }
+
+    .innerCard {
+        width: 100% !important;
+        height: 505px;
+    }
+
+}
+
+@media(max-width:412px) {
+    .backSide>p {
+        font-size: 1rem !important;
+    }
+}
+
+@media(max-width:835px) {
+    .songInfo {
+        width: 100% !important;
+    }
+
+    .bottom {
+        padding: 0 6px !important;
+    }
+}
+
+@media(max-width:502px) {
+    #gif {
+        width: 30px !important;
+    }
+
+    #masterSongName {
+        font-size: 15px !important;
+    }
+
+    #songCurrTime,
+    #songTotalTime {
+        font-size: 15px !important;
+    }
+}
 
 .hover_effect:hover {
     color: white !important;
@@ -182,12 +270,12 @@ section {
     position: relative;
 }
 
-a,
+
 a:link,
 a:visited {
     color: #212121;
     text-decoration: none;
-}
+} */
 
 .Carousel-slider {
     height: 460px;
@@ -278,7 +366,6 @@ a:visited {
 
 .bottom {
     position: sticky;
-    height: 130px;
     background-color: black;
     color: white;
     bottom: 5px;
@@ -294,6 +381,7 @@ a:visited {
     border: 1px solid rgba(0, 0, 0, 0.52);
     width: 90%;
     margin: auto;
+    padding: 10px;
 }
 
 .icon {
@@ -727,7 +815,7 @@ ul li:hover {
     }
 }
 
-@media(max-width:503px) {
+@media(max-width:514px) {
     .arijit-pic img {
         width: 100%;
     }
@@ -754,86 +842,5 @@ ul li:hover {
     text-decoration: underline;
     color: white;
 
-}
 
-.sidebar {
-    background: rgba(0, 0, 0, 0.9);
-    box-shadow: 0 8px 32px 0 rgb(30 215 96 / 11%);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-
-.sidebar li {
-
-    color: white;
-    font-family: sans-serif;
-    font-weight: normal;
-}
-
-.sidebar a,
-.sidebar a:link,
-.sidebar a:visited {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.sidebar li {
-    padding: 12px;
-    box-sizing: border-box;
-}
-
-.sidebar div:nth-of-type(1) {
-    background: #232323;
-    width: -webkit-fill-available;
-    padding: 20px 10px;
-    box-sizing: border-box;
-    border-radius: 6px;
-    margin: 20px;
-    box-sizing: border-box;
-}
-
-.sideNavBar #loginButton a {
-    color: #000;
-    text-decoration: none;
-}
-
-.sideNavBar button {
-    background-color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 14px 30px;
-    border: 0px;
-    border-radius: 40px;
-    cursor: pointer;
-    margin-left: 20px;
-}
-
-.sideNavBar ul {
-    list-style: none;
-}
-
-.sideNavBar ul li {
-    margin: 0px 8px;
-    display: flex;
-    width: max-content;
-}
-
-.sideNavBar ul li a {
-    color: #b3b3b3;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-.sideNavBar {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: center;
-}
-.sidebar>div>li>a>i{
-    margin-right: 10px;
 }
