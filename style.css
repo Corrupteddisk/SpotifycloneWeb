@@ -169,6 +169,98 @@ nav li:last-child {
     text-decoration: underline !important;
 }
 
+.section-header {
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+section {
+    padding-top: 50px;
+    overflow: hidden;
+    position: relative;
+}
+
+a, a:link, a:visited {
+    color: #212121;
+    text-decoration: none;
+}
+
+.Carousel-slider {
+    height: 460px;
+    position: relative;
+    width: 100%;
+}
+
+.Carousel-slider.fullwidth {
+    height: 500px;
+}
+
+.Carousel-slider.fullwidth .slider-item {
+    height: 480px;
+    line-height: 480px;
+    width: 100%
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 0 50%;
+	perspective: 800px  !important;
+}
+
+.slider-item {
+    box-shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.12);
+    display: none;
+    height: 300px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 300px;
+    cursor: pointer;
+	/* border: 5px solid #ffc107; */
+}
+
+.slider-item img{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.indicators {
+	bottom: 0;
+    left: 50%;
+    padding: 0;
+    list-style-type: none;
+    margin: 40px 0 0 -77px;
+    position: absolute;
+}
+
+.indicators li {
+    color: #255f8b;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    text-align: center;
+    width: 16px;
+}
+
+.indicators a {
+    background: lightgray;
+    border-radius: 8px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.indicators .active a {
+	background: darkgray;
+
+}
+
 .container {
     min-height: 71vh;
     background-color: black;
