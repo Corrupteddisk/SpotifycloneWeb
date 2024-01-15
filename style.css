@@ -837,7 +837,7 @@ ul li:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: -webkit-fill-available;
+    /* height: -webkit-fill-available; */
     justify-content: space-around;
 }
 .genre{
