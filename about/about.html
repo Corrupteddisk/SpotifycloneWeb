@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="./about.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
-<body>
-    <div class="nav">
-        <div class="vid">
-            <video src="../home-page/Spotify.mp4" autoplay loop muted></video>
-        </div>
-        <!-- <img src="./spotify.png" alt=""> -->
-        <div class="det">
-            <a href="../home-page/home.html"><p>Home</p></a>
-            <a href="../sign-in-and-login/sign_up_form.html"><p>Sign Up</p></a>
-            <a href="../sign-in-and-login/login_form.html"><p>Login</p></a>
-        </div>
-    </div>
 
+<body>
+
+    <ul class="sidebar">
+        <li class="menu close-menu" onclick="hideSidebar()"><i class="material-icons" id="menu-icon-close">close</i>
+        </li>
+        <div>
+
+            <li class="hover_effect"><a href="/index.html" class="homelink1"><i class="fa-solid fa-house"></i>Home</a>
+            </li>
+            <li class="hover_effect"><a href="about.html"><i class="fa-solid fa-address-card"></i>About</a></li>
+            <li class="hover_effect"><a href="support.html"><i class="fa-solid fa-headset"></i>Support</a></li>
+        </div>
+        <div class="sideNavBar">
+
+            <ul>
+                <li>
+                    <a href="./sign-in-and-login/sign_up_form.html">Sign Up</a>
+                </li>
+            </ul>
+            <button type="button" id="loginButton"> <a href="./sign-in-and-login/login_form.html">Login</a></button>
+        </div>
+
+    </ul>
+    </nav>
+    <nav>
+        <ul>
+            <div class="vid">
+                <video src="../home-page/Spotify.mp4" autoplay loop muted></video>
+            </div>
+            <div class="brand">
+                <li class="hideonmobile"><a href="/index.html" class="homelink1">Home</a></li>
+                <li class="hideonmobile"><a href="about.html" class="aboutlink">About</a></li>
+                <li class="hideonmobile"><a href="/support.html" class="aboutlink">Support</a></li>
+                <li class="hideonmobile Login1 login2"><a href="./sign-in-and-login/login_form.html    "
+                        class="homelink2">Login</a></li> &nbsp;&nbsp;
+                <li class="hideonmobile Login1 signup1"><a href="./sign-in-and-login/sign_up_form.html"
+                        class="homelink2">Sign
+                        up</a></li>
+            </div>
+            <li class="menu" onclick="showSidebar()"><i class="material-icons" id="menu-icon">menu</i></li>
+        </ul>
+    </nav>
+    <!-- Navbar -->
     <br><br>
     <p class="intro" data-aos="flip-up">About Us</p>
     <hr>
@@ -28,15 +62,18 @@
     <div class="content">
         <div class="para">
             <div class="sub-para" data-aos="fade-right">
-            With Say Music, it is easy to find your favourite Arijit song anywhere, be it your desktop, laptop or mobile phone
-            <br><br><br>
-            Our mission is to unlock the potential of human creativity by giving Arijit the opportunity to live off their art and thousands of fans the opportunity to enjoy and be inspired by it.
+                With Say Music, it is easy to find your favourite Arijit song anywhere, be it your desktop, laptop or
+                mobile phone
+                <br><br><br>
+                Our mission is to unlock the potential of human creativity by giving Arijit the opportunity to live off
+                their art and thousands of fans the opportunity to enjoy and be inspired by it.
             </div>
             <br>
             <div class="sub-para" data-aos="fade-left">
-                Our future plans are to include other Indian singers so that the world can enjoy the magical voices of the Indian singers.
+                Our future plans are to include other Indian singers so that the world can enjoy the magical voices of
+                the Indian singers.
             </div>
-            
+
         </div>
         <div class="flip-photo" data-aos="fade-up">
             <div class="box one">
@@ -60,7 +97,9 @@
     <div class="contact">
         <div class="contact-box">
             <input type="text" placeholder="Your Name">
-            <input type="text" placeholder="Your Email">
+        </div>
+        <div class="contact-box">
+            <input type="email" placeholder="Your Email">
         </div>
         <div class="subject">
             <input type="text" placeholder="Enter Subject">
@@ -80,5 +119,7 @@
             duration: 1000,
         });
     </script>
+    <script src="Aboutnavbar.js"></script>
 </body>
+
 </html>
