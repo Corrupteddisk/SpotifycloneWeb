@@ -787,22 +787,22 @@ ul li:hover {
     color: white;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-track {
     /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
-    background: linear-gradient(#1ed760,#00ff59,#80c019,rgba(17,17,17,0.8));
+    background: linear-gradient(#1ed760, #00ff59, #80c019, rgba(17, 17, 17, 0.8));
     border-radius: -20px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#1ed760,#80c019);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1ed760, #80c019);
     border-radius: 20px;
     border: 2px solid #000;
-  }
-  
+}
+
 
 @media (max-width:785px) {
     .panel2 {
@@ -970,4 +970,13 @@ ul li:hover {
 
 .diffGenre>div>img {
     width: 100%;
+}
+
+.sound {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#vol {
+    cursor: pointer;
 }

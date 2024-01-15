@@ -267,8 +267,8 @@ let top10songs = [
 ]
 
 function top10() {
-    myProgressBar.value =0
-    gif.style.opacity =0
+    myProgressBar.value = 0
+    gif.style.opacity = 0
     songs = top10songs;
     songIndex = 0
     document.querySelector("#top-heading").innerText = "Top Songs of Arijit Singh"
@@ -292,14 +292,14 @@ function top10() {
     masterSongName.innerText = songs[songIndex].songName;
     masterPlay.classList.remove('fa-pause-circle');
     masterPlay.classList.add('fa-play-circle');
-    
+
     myProgressBar.value = 0
 
 }
 function romantic() {
     myProgressBar.value = 0
-    
-    gif.style.opacity =0
+
+    gif.style.opacity = 0
     songs = romantiSongs;
     songIndex = 0
     document.querySelector("#top-heading").innerText = "Romantic Songs of Arijit Singh"
@@ -327,8 +327,8 @@ function romantic() {
 }
 function sad() {
     myProgressBar.value = 0
-    
-    gif.style.opacity =0
+
+    gif.style.opacity = 0
     songs = sadSongs;
     songIndex = 0
     document.querySelector("#top-heading").innerText = "Sad Songs of Arijit Singh"
@@ -356,8 +356,8 @@ function sad() {
 }
 function bengali() {
     myProgressBar.value = 0
-    
-    gif.style.opacity =0
+
+    gif.style.opacity = 0
     songs = bengaliSongs;
     songIndex = 0
     document.querySelector("#top-heading").innerText = "Bengali Songs of Arijit Singh"
@@ -385,8 +385,8 @@ function bengali() {
 }
 function party() {
     myProgressBar.value = 0
-    
-    gif.style.opacity =0
+
+    gif.style.opacity = 0
     songs = partySongs;
     songIndex = 0
     document.querySelector("#top-heading").innerText = "Party Songs of Arijit Singh"
@@ -413,9 +413,16 @@ function party() {
 
 }
 
-document.querySelectorAll(".genre").forEach((div)=>{
-    div.addEventListener("click",function(){
+document.querySelectorAll(".genre").forEach((div) => {
+    div.addEventListener("click", function () {
         myProgressBar.value = 0
         console.log(myProgressBar.value)
     })
 })
+
+// For volume button
+
+let vol = document.getElementById("vol");
+vol.oninput = function () {
+    audioElement.volume = vol.value / 1000;
+}
