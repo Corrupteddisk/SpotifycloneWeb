@@ -147,7 +147,7 @@ nav li:last-child {
 }
 
 .homelink1 {
-    color: rgb(147, 140, 140);
+    color: rgb(147, 140, 140) !important;
 }
 
 .homelink1:hover {
@@ -161,7 +161,7 @@ nav li:last-child {
 
 .aboutlink {
     text-decoration: none;
-    color: rgb(147, 140, 140);
+    color: rgb(147, 140, 140) !important;
 }
 
 .aboutlink:hover {
@@ -951,7 +951,11 @@ ul li:hover {
     flex-direction: row;
     padding: 20px;
     box-sizing: border-box;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
 
 .diffGenre>div {
     width: -webkit-fill-available;
@@ -961,6 +965,7 @@ ul li:hover {
     color: white;
     text-shadow: 0 0 7px white;
     font-family: sans-serif;
+
 }
 
 .diffGenre>div>img {
