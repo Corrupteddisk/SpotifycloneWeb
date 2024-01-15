@@ -16,6 +16,29 @@
 
 <body>
 
+
+    <ul class="sidebar">
+        <li class="menu close-menu" onclick="hideSidebar()"><i class="material-icons" id="menu-icon-close">close</i>
+        </li>
+        <div>
+
+            <li class="hover_effect"><a href="./home-page/home.html" class="homelink1"><i
+                        class="fa-solid fa-house"></i>Home</a></li>
+            <li class="hover_effect"><a href="./about/about.html"><i class="fa-solid fa-address-card"></i>About</a></li>
+            <li class="hover_effect"><a href="#"><i class="fa-solid fa-headset"></i>Support</a></li>
+        </div>
+        <div class="sideNavBar">
+
+            <ul>
+                <li>
+                    <a href="./sign-in-and-login/sign_up_form.html">Sign Up</a>
+                </li>
+            </ul>
+            <button type="button" id="loginButton"> <a href="./sign-in-and-login/login_form.html">Login</a></button>
+        </div>
+
+    </ul>
+    </nav>
     <nav>
         <ul>
             <li class="brand"><img src="logo.png" alt="Spotify"><a href="main.html" target="_blank"
@@ -63,7 +86,7 @@
 
     <div class="container">
         <div class="songList">
-            <h1>Top Songs of Arijit Singh</h1>
+            <h1 id="top-heading">Top Songs of Arijit Singh</h1>
             <div class="songItemContainer">
                 <div class="songItem">
                     <img alt="1">
@@ -189,6 +212,21 @@
 
     <hr>
     <br>
+    <div class="diffGenre">
+        <!-- top 10  -->
+        <div onclick="top10()" class="genre"> <img src="./covers/arijit.jpg"> Top 10 song of Arijit </div>
+        <!-- romantic -->
+        <div onclick="romantic()" class="genre"> <img src="./covers/rom.jpg">romantic songs </div>
+        <!-- sad -->
+        <div onclick="sad()" class="genre"><img src="./covers/sad.jpg"> sad songs </div>
+        <!-- bengali -->
+        <div onclick="bengali()" class="genre"><img src="./covers/bengali.jpg">bengali songs</div>
+        <!-- party -->
+        <div onclick="party()" class="genre"><img src="./covers/party.jpg">party songs</div>
+
+
+    </div>
+
     <div class="ar-main">
         <h1>ARIJIT SINGH</h1>
         <div class="arijit-singh">
