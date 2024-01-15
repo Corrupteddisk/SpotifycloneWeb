@@ -828,9 +828,9 @@ ul li:hover {
 }
 
 @media only screen and (max-width: 1100px) {
-    body {
+    /* body {
         /* background-color: red; */
-    }
+    /* }  */
 }
 
 .genre a {
@@ -840,9 +840,11 @@ ul li:hover {
     /* height: -webkit-fill-available; */
     justify-content: space-around;
 }
-.genre{
+
+.genre {
     width: 20%;
 }
+
 .genre img {
     margin-bottom: 10px;
 }
