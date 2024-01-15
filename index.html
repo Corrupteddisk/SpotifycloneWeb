@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -46,7 +47,7 @@
             <div class="brand">
                 <li class="hideonmobile"><a href="./home-page/home.html" class="homelink1">Home</a></li>
                 <li class="hideonmobile"><a href="./about/about.html" class="aboutlink">About</a></li>
-                <li class="hideonmobile">Support</li>
+                <li class="hideonmobile"><a href="./support.html">Support</a></li>
                 <li class="hideonmobile Login1 login2"><a href="./sign-in-and-login/login_form.html    "
                         class="homelink2">Login</a></li> &nbsp;&nbsp;
                 <li class="hideonmobile Login1 signup1"><a href="./sign-in-and-login/sign_up_form.html"
@@ -86,10 +87,10 @@
 
 
     <div class="container">
-        <div class="songList">
+        <div class="songList" data-aos="fade-right">
             <h1 id="top-heading">Top Songs of Arijit Singh</h1>
             <div class="songItemContainer">
-                <div class="songItem">
+                <div class="songItem" >
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
                     <span class="songlistplay"><span class="timestamp">04:22 <i id="0"
@@ -221,7 +222,22 @@
     <hr>
     <br>
 
-    <div class="ar-main">
+    <div class="diffGenre" data-aos="slide-up">
+        <!-- top 10  -->
+        <div class="genre"> <a href="./index.html"><img src="./covers/arijit2.jpg" style="box-shadow:0 0 20px 2px #1ed76057;"> Top 10 Songs of Arijit</a> </div>
+        <!-- romantic -->
+        <div class="genre"> <a href="./romantic/romantic.html"><img src="./covers/rom.jpg">Romantic Songs of Arijit</a></div>
+        <!-- sad -->
+        <div class="genre"><a href="./sad/sad.html"><img src="./covers/sad.jpg">Sad Songs of Arijit</a></div>
+        <!-- bengali -->
+        <div class="genre"><a href="./bengali/bengali.html"><img src="./covers/bengali.jpg">Bengali Songs of Arijit</a></div>
+        <!-- party -->
+        <div class="genre"><a href="./party/party.html"><img src="./covers/party.jpg">Party Songs of Arijit</a></div>
+
+
+    </div>
+
+    <div class="ar-main" data-aos="slide-down">
         <h1>ARIJIT SINGH</h1>
         <div class="arijit-singh">
 
@@ -253,20 +269,7 @@
         </div>
     </div>
 
-    <div class="diffGenre">
-        <!-- top 10  -->
-        <div class="genre"> <a href="./index.html"><img src="./covers/arijit2.jpg"></a> </div>
-        <!-- romantic -->
-        <div class="genre"> <a href="./romantic/romantic.html"><img src="./covers/rom.jpg"></a></div>
-        <!-- sad -->
-        <div class="genre"><a href="./sad/sad.html"><img src="./covers/sad.jpg"></a></div>
-        <!-- bengali -->
-        <div class="genre"><a href="./bengali/bengali.html"><img src="./covers/bengali.jpg"></a></div>
-        <!-- party -->
-        <div class="genre"><a href="./party/party.html"><img src="./covers/party.jpg"></a></div>
 
-
-    </div>
     <footer>
         <div class="footer-container">
             <div class="spt-logo">
@@ -327,6 +330,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
     <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+    });
+    </script>
 </body>
 
 </html>
