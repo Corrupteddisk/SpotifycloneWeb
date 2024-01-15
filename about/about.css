@@ -212,6 +212,7 @@ textarea {
     font-size: 15px;
 }
 
+
 .intro {
     margin: auto !important;
     text-align: center;
@@ -267,3 +268,20 @@ textarea {
     }
 
 }
+
+::-webkit-scrollbar{
+    width: 15px;
+  }
+  
+  ::-webkit-scrollbar-track{
+    /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
+    background: linear-gradient(#1ed760,#00ff59,#80c019,rgba(17,17,17,0.8));
+    border-radius: -20px;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(#1ed760,#80c019);
+    border-radius: 20px;
+    border: 2px solid #000;
+  }
+
