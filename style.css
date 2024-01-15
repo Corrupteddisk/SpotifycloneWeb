@@ -147,7 +147,7 @@ nav li:last-child {
 }
 
 .homelink1 {
-    color: rgb(147, 140, 140) !important;
+    color: rgb(147, 140, 140);
 }
 
 .homelink1:hover {
@@ -161,7 +161,7 @@ nav li:last-child {
 
 .aboutlink {
     text-decoration: none;
-    color: rgb(147, 140, 140) !important;
+    color: rgb(147, 140, 140);
 }
 
 .aboutlink:hover {
@@ -212,11 +212,14 @@ nav li:last-child {
 @media(max-width:514px) {
     .myCard {
         width: 100% !important;
+        display: flex;
+        justify-content: center;
     }
 
+
     .innerCard {
-        width: 100% !important;
-        height: 505px;
+        /* width: 100% !important; */
+        /* height: 505px; */
     }
 
 }
@@ -657,6 +660,21 @@ h1 {
     }
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
+    background: linear-gradient(#1ed760, #00ff59, #80c019, rgba(17, 17, 17, 0.8));
+    border-radius: -20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1ed760, #80c019);
+    border-radius: 20px;
+    border: 2px solid #000;
+}
 
 /*  */
 
@@ -787,23 +805,6 @@ ul li:hover {
     color: white;
 }
 
-::-webkit-scrollbar{
-    width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track{
-    /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
-    background: linear-gradient(#1ed760,#00ff59,#80c019,rgba(17,17,17,0.8));
-    border-radius: -20px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#1ed760,#80c019);
-    border-radius: 20px;
-    border: 2px solid #000;
-  }
-  
-
 @media (max-width:785px) {
     .panel2 {
         flex-direction: column;
@@ -832,6 +833,20 @@ ul li:hover {
     }
 }
 
+.genre a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* height: -webkit-fill-available; */
+    justify-content: space-around;
+}
+.genre{
+    width: 20%;
+}
+.genre img {
+    margin-bottom: 10px;
+}
+
 @media(max-width:514px) {
     .arijit-pic img {
         width: 100%;
@@ -845,6 +860,30 @@ ul li:hover {
 
     .backSide p {
         font-size: small;
+    }
+
+    .diffGenre {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .diffGenre>.genre {
+
+        width: 40%;
+        height: max-content;
+    }
+
+    .genre img {
+        width: -webkit-fill-available;
+        height: unset;
+        aspect-ratio: 1/1;
+    }
+
+    .timestamp {
+        margin: unset;
+        margin-right: 20px;
+        width: 100%;
+        display: block;
     }
 }
 
@@ -951,11 +990,7 @@ ul li:hover {
     flex-direction: row;
     padding: 20px;
     box-sizing: border-box;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
 }
-
 
 .diffGenre>div {
     width: -webkit-fill-available;
@@ -965,9 +1000,15 @@ ul li:hover {
     color: white;
     text-shadow: 0 0 7px white;
     font-family: sans-serif;
-
 }
 
 .diffGenre>div>img {
     width: 100%;
+}
+
+.genre a,
+.genre a:link,
+.genre a:visited {
+    color: #ffffff;
+    text-decoration: none;
 }
