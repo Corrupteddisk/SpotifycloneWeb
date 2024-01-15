@@ -215,13 +215,13 @@ function displaySongTime() {
 
 // sad song
 
-let sadSongs = [
-    { songName: "Agar Tum Sath Ho ", filePath: "./songs/sad/1.mp3", coverPath: "./songs/sad/1.jpg", songDur: "05:38" },
-    { songName: "Channa Mereya ", filePath: "./songs/sad/2.mp3", coverPath: "./songs/sad/2.jpg", songDur: "03:03" },
-    { songName: "Darkhast", filePath: "./songs/sad/3.mp3", coverPath: "./songs/sad/3.jpg", songDur: "07:11" },
-    { songName: "hamari adhuru kahani ", filePath: "./songs/sad/4.mp3", coverPath: "./songs/sad/4.jpg", songDur: "05:45" },
-    { songName: "Lo Maan Liya ", filePath: "./songs/sad/5.mp3", coverPath: "./songs/sad/5.jpg", songDur: "04:41" }
-]
+// let sadSongs = [
+//     { songName: "Agar Tum Sath Ho ", filePath: "./songs/sad/1.mp3", coverPath: "./songs/sad/1.jpg", songDur: "05:38" },
+//     { songName: "Channa Mereya ", filePath: "./songs/sad/2.mp3", coverPath: "./songs/sad/2.jpg", songDur: "03:03" },
+//     { songName: "Darkhast", filePath: "./songs/sad/3.mp3", coverPath: "./songs/sad/3.jpg", songDur: "07:11" },
+//     { songName: "hamari adhuru kahani ", filePath: "./songs/sad/4.mp3", coverPath: "./songs/sad/4.jpg", songDur: "05:45" },
+//     { songName: "Lo Maan Liya ", filePath: "./songs/sad/5.mp3", coverPath: "./songs/sad/5.jpg", songDur: "04:41" }
+// ]
 // romantic song
 
 let romantiSongs = [
