@@ -9,7 +9,8 @@
 
 body {
     /* background-color: rgb(16, 116, 3); */
-    background-color: black;;
+    background-color: black;
+    ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,10 +284,12 @@ button[type=submit] {
 .use-phn {
     justify-content: space-around;
 }
-.login-options{
+
+.login-options {
     gap: unset;
 }
-.login-options button{
+
+.login-options button {
     font-size: medium;
     margin-top: 15px;
 }
@@ -301,7 +304,7 @@ button[type=submit] {
         font-size: x-small;
     }
 
-    .login-options button{
+    .login-options button {
         font-size: small;
     }
 
@@ -311,29 +314,32 @@ button[type=submit] {
 
 .login-button {
     width: 100%;
-
-}
-
-.login-button {
-    width: 100%;
-    /* display: inline-block; */
-    /* padding: 5px 16px; */
     box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
 }
+
 
 .login-button button {
     width: 100%;
     box-sizing: border-box;
     height: 5vh;
     position: relative;
+    cursor: pointer;
 }
 
+.login-options {
+    margin-bottom: 20px;
+}
 
 .login-options button {
     width: -webkit-fill-available;
     height: unset;
     padding: 10px 0;
     position: relative;
+    width: 100%;
+
 }
 
 .login-options button>img {
@@ -352,54 +358,55 @@ button[type=submit] {
 }
 
 
-.login-box{
+.login-box {
     min-width: max-content;
 }
 
 
 /* ============================ */
-.topcard{
+.topcard {
     display: flex;
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
-    width:fit-content;
-    justify-content: space-between;
-    min-width:60vw;
+    width: fit-content;
+    justify-content: center;
+    /* min-width: 60vw; */
     flex-wrap: wrap;
-    height:fit-content;
+    height: fit-content;
     /* border:4px solid red; */
     overflow: hidden;
-    transition: cubic-bezier(0.87,-0.02, 0, 1.06) 0.2s;
+    transition: cubic-bezier(0.87, -0.02, 0, 1.06) 0.2s;
     border-radius: 30px;
 }
 
-.topcard:hover{
+.topcard:hover {
     box-shadow: 0px 0px 30px rgb(65, 125, 65);
 }
 
 
 
-.leftcard, .rightcard{
-    width:50%;
+.leftcard,
+.rightcard {
+    width: 50%;
 }
 
-.leftcard{
+.leftcard {
     background: rgb(23, 30, 23);
     border-radius: 30px 0px 0px 30px;
-    padding:auto;
+    padding: auto;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
-.rightcard{
-    
+.rightcard {
+
     border-radius: 0px 30px 30px 0px;
     z-index: -1;
 }
 
-#log-bg{
+#log-bg {
     height: 40vw;
     background-image: url("loginbg.png");
     background-size: cover;
@@ -422,10 +429,11 @@ button[type=submit] {
     /* left: 35%; */
     background-color: rgba(17, 17, 17, 1);
     border-radius: 20px;
-    margin:auto;
+    margin: auto;
     width: 80%;
-    height:90%;
+
     transition: ease-in-out 2s;
+
 }
 
 /* .login-box:hover{
@@ -434,70 +442,95 @@ button[type=submit] {
 } */
 
 
-.logo-photo{
+.logo-photo {
     background-image: url("favicon.png");
-    width:15vw;
-    min-width:60px;
+    width: 15vw;
+    min-width: 60px;
     height: 15vw;
     min-height: 60px;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.logo-photo:hover{
-    cursor:pointer;
+.logo-photo:hover {
+    cursor: pointer;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-track {
     /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
-    background: linear-gradient(#1ed760,#00ff59,#80c019,rgba(17,17,17,0.8));
+    background: linear-gradient(#1ed760, #00ff59, #80c019, rgba(17, 17, 17, 0.8));
     border-radius: -20px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#1ed760,#80c019);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1ed760, #80c019);
     border-radius: 20px;
     border: 2px solid #000;
-  }
+}
 
 @media screen and (min-width:320px) and (max-width: 1100px) {
-    .topcard{
-        width:60vw;
+    .topcard {
+        width: 60vw;
         background-image: url("loginbg.png");
         background-size: cover;
         border-radius: 10px;
         height: fit-content;
-        padding:6%;
+        padding: 6%;
         width: fit-content;
     }
 
-    .leftcard{
+    .leftcard {
         border: 2px solid red;
         border-radius: 10px;
-        margin:auto;
-        width:100%;
+        margin: auto;
+        width: 100%;
         height: 100%;
-        scale:1;
-        padding:4%;
+        scale: 1;
+        padding: 4%;
     }
 
-    .login-box{
-        padding:4%;
+    .login-box {
+        padding: 4%;
+        padding-left: 0%;
     }
 
-    .rightcard{
+    .rightcard {
         display: none;
     }
 
 }
 
 @media screen and (min-width:1101px) and (max-width: 1320px) {
-    .login-box{
-        scale:0.9;
+    .login-box {
+        scale: 0.9;
+    }
+
+}
+
+@media(max-width:380px) {
+    .topcard {
+        width: 100%;
+        padding: 0;
+    }
+
+    .leftcard {
+        width: 100% !important;
+        margin: auto !important;
+        display: block;
+    }
+
+    .login-header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .login-box {
+        width: 100%;
+        margin: auto;
     }
 
 }

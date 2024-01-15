@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/x-icon" href="favicon.png">
 </head>
+
 <body>
     <div class="header">
         <div class="vid">
@@ -19,7 +21,7 @@
     <div class="login-header" data-aos="fade-up">
         <p>Login</p>
     </div>
-    
+
     <br>
     <div class="login-box" data-aos="zoom-in">
         <div class="login-options">
@@ -34,38 +36,41 @@
         </div>
         <hr>
         <form name="loginForm" class="lform">
-        <div class="container">
-            <label for="uname"><b>Email or Username</b></label>
-            <input type="text" placeholder="Email or Username" name="uname" required>
-            <label for="psw"><b>Password</b></label>
-            <div class="passw">
-                <input type="password" placeholder="Enter Password" name="psw" required>
-                <i class="fa fa-eye" id="toggle-password"></i>
+            <div class="container">
+                <label for="uname"><b>Email or Username</b></label>
+                <input type="text" id="uname" class="commonAttr" placeholder="Email or Username" name="uname" required>
+                <label for="psw"><b>Password</b></label>
+                <div class="passw">
+                    <input type="password" id="psw" class="commonAttr" placeholder="Enter Password" name="psw" required>
+                    <i class="fa fa-eye" id="toggle-password"></i>
+                </div>
             </div>
-        </div>
-        <div class="remember-me">
-            <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-            </label>
-            <p>Remember Me</p>  
-        </div>
-        <div class="login-button">
-            <a href=""><button type="submit" onclick="return validateForm()">Login</button></a>
-        </div>
-        <div class="log">
-            <p>Don't have an account?</p>
-            <a href="./sign_up_form.html"><p><u>Sign up now</u></p></a>
-        </div>
+            <div class="remember-me">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+                <p>Remember Me</p>
+            </div>
+            <div class="login-button">
+                <a href=""><button type="submit" onclick="return validateForm()">Login</button></a>
+            </div>
+            <div class="log">
+                <p>Don't have an account?</p>
+                <a href="./sign_up_form.html">
+                    <p><u>Sign up now</u></p>
+                </a>
+            </div>
     </div>
-</form>
+    </form>
 
-<img src="./guitar-1.png" class="guitar one" alt="">
-<img src="./guitar-2.png" class="guitar two" alt="">
+    <img src="./guitar-1.png" class="guitar one" alt="">
+    <img src="./guitar-2.png" class="guitar two" alt="">
 </body>
 <script src="./login_form.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
-  AOS.init();
+    AOS.init();
 </script>
+
 </html>
