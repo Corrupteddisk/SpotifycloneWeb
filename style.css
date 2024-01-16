@@ -1053,15 +1053,34 @@ ul li:hover {
 
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
-.icons{
+
+.icons {
     display: flex;
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.fa-3x {
+    /* font-size: 2.5em !important; */
+}
+
+.fa-step-backward,
+.fa-step-forward {
+    background: #1ed760;
+    padding: 10px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    font-size: 1.5em !important;
 }
