@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -90,7 +92,7 @@
         <div class="songList" data-aos="fade-right">
             <h1 id="top-heading">Top Songs of Arijit Singh</h1>
             <div class="songItemContainer">
-                <div class="songItem" >
+                <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let me Love You</span>
                     <span class="songlistplay"><span class="timestamp">04:22 <i id="0"
@@ -206,9 +208,14 @@
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
         <div class="icons">
             <!-- fontawesome icons -->
+            <span class="material-symbols-outlined" onclick="replay()">
+                replay
+            </span>
+
             <i class="fas fa-3x fa-step-backward" id="previous"></i>
             <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
             <i class="fas fa-3x fa-step-forward" id="next"></i>
+            <i class="fa-solid fa-shuffle" style="color: #ffffff;" onclick="shuffle()"></i>
 
 
         </div>
@@ -224,13 +231,16 @@
 
     <div class="diffGenre" data-aos="slide-up">
         <!-- top 10  -->
-        <div class="genre"> <a href="./index.html"><img src="./covers/arijit2.jpg" style="box-shadow:0 0 20px 2px #1ed76057;"> Top 10 Songs of Arijit</a> </div>
+        <div class="genre"> <a href="./index.html"><img src="./covers/arijit2.jpg"
+                    style="box-shadow:0 0 20px 2px #1ed76057;"> Top 10 Songs of Arijit</a> </div>
         <!-- romantic -->
-        <div class="genre"> <a href="./romantic/romantic.html"><img src="./covers/rom.jpg">Romantic Songs of Arijit</a></div>
+        <div class="genre"> <a href="./romantic/romantic.html"><img src="./covers/rom.jpg">Romantic Songs of Arijit</a>
+        </div>
         <!-- sad -->
         <div class="genre"><a href="./sad/sad.html"><img src="./covers/sad.jpg">Sad Songs of Arijit</a></div>
         <!-- bengali -->
-        <div class="genre"><a href="./bengali/bengali.html"><img src="./covers/bengali.jpg">Bengali Songs of Arijit</a></div>
+        <div class="genre"><a href="./bengali/bengali.html"><img src="./covers/bengali.jpg">Bengali Songs of Arijit</a>
+        </div>
         <!-- party -->
         <div class="genre"><a href="./party/party.html"><img src="./covers/party.jpg">Party Songs of Arijit</a></div>
 
@@ -332,9 +342,9 @@
     <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init({
-        duration: 1000,
-    });
+        AOS.init({
+            duration: 1000,
+        });
     </script>
 </body>
 
