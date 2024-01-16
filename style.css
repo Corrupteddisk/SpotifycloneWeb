@@ -217,16 +217,22 @@ nav li:last-child {
     }
 
 
-    .innerCard {
-        /* width: 100% !important; */
-        /* height: 505px; */
-    }
+    /* .innerCard {
+        width: 100% !important; 
+         height: 505px;
+    } */
 
 }
 
 @media(max-width:412px) {
-    .backSide>p {
-        font-size: 1rem !important;
+    .backSide p {
+        font-size: 13px !important;
+    }
+}
+
+@media(max-width:384px) {
+    .backSide p {
+        font-size: 10px !important;
     }
 }
 
@@ -1035,11 +1041,12 @@ ul li:hover {
 
 #vol {
     cursor: pointer;
+}
 
 .genre a,
 .genre a:link,
 .genre a:visited {
- color: #ffffff;
- text-decoration: none;
+    color: #ffffff;
+    text-decoration: none;
 
 }
