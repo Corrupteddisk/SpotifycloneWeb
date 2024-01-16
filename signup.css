@@ -68,3 +68,10 @@ p {
 p a {
     color: rgb(255, 255, 255);
 }
+
+.footer {
+    padding-left: 550px;
+}
+.spotifycontain {
+    font-weight: 100;
+}
