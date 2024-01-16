@@ -12,18 +12,290 @@ body {
     color: #fff;
 }
 
-.nav {
-    position: absolute;
+nav ul {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    /* background-color: rgba(17,17,17,1); */
+    list-style-type: none;
+    height: 65px;
     background-color: black;
-    height: 10vh;
-    width: 98vw;
-    gap: 50vw;
-    border-radius: 20px;
+    color: white;
 }
+
+nav ul li {
+    padding: 0 12px;
+    /* use this to make li with logo in  navbar curser pointer to use it un-comment it */
+    /* cursor: pointer; */
+}
+
+nav ul div li {
+    /* I use div approch */
+    padding: 0 12px;
+    cursor: pointer;
+
+}
+
+
+.brand:last-child {
+    margin-left: auto;
+}
+
+nav li:last-child {
+    margin-left: auto;
+}
+
+.brand img {
+    width: 54px;
+    padding: 0 10px;
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.login2 {
+    padding: 10px 4px 10px 4px;
+    border-radius: 30px;
+    width: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: #1ed760;
+    text-align: center;
+
+}
+
+.login2 a {
+    color: #ffffff;
+}
+
+.signup1 {
+    padding: 10px 4px 10px 4px;
+    border-radius: 30px;
+    width: 100px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: white;
+    text-align: center;
+}
+
+.signup1 a {
+    color: black;
+}
+
+.signup1 a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: black;
+    backdrop-filter: blur(20px);
+    box-shadow: -10px 0 10ox rgba(0, 0, 0, 0, 1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sidebar li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    width: 100%;
+    height: 65px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    position: relative;
+    cursor: pointer;
+    color: black;
+}
+
+.sidebar li:hover {
+    text-decoration: none;
+}
+
+
+.close-menu {
+    justify-content: center !important;
+    align-items: flex-end !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+    margin-top: 3px !important;
+}
+
+.homelink1 {
+    color: rgb(147, 140, 140);
+}
+
+.homelink1:hover {
+    color: white;
+}
+
+.homelink2 {
+    text-decoration: none;
+    color: rgb(147, 140, 140);
+}
+
+.aboutlink {
+    text-decoration: none;
+    color: rgb(147, 140, 140);
+}
+
+.aboutlink:hover {
+    color: white;
+
+}
+
+.sidebar .loginlink {
+    text-decoration: none;
+    color: black;
+}
+
+.loginlink:hover {
+    color: white;
+}
+
+.homelink2:hover {
+    color: white;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+#menu-icon {
+    color: white;
+    font-size: 48px;
+}
+
+#menu-icon-close {
+    color: white;
+    font-size: 48px;
+}
+
+.brand a {
+    text-decoration: none;
+}
+
+.sidebar {
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: 0 8px 32px 0 rgb(30 215 96 / 11%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.sidebar li {
+
+    color: white;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+.sidebar a,
+.sidebar a:link,
+.sidebar a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.sidebar li {
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+.sidebar div:nth-of-type(1) {
+    background: #232323;
+    width: -webkit-fill-available;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.sideNavBar #loginButton a {
+    color: #000;
+    text-decoration: none;
+}
+
+.sideNavBar button {
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.sideNavBar ul {
+    list-style: none;
+}
+
+.sideNavBar ul li {
+    margin: 0px 8px;
+    display: flex;
+    width: max-content;
+}
+
+.sideNavBar ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.sideNavBar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.sidebar>div>li>a>i {
+    margin-right: 10px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.brand a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:716px) {
+    .hideonmobile {
+        display: none;
+
+    }
+
+    .menu {
+        display: block;
+    }
+}
+
 
 .vid {
     position: relative;
@@ -213,7 +485,7 @@ textarea {
 }
 
 
-.intro {
+/* .intro {
     margin: auto !important;
     text-align: center;
 }
@@ -239,6 +511,266 @@ textarea {
         height: auto;
         margin-bottom: 20px;
         width: 40%;
+    }
+} */
+/* Style the contribute section */
+.contribute-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contribute-section h2 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.contribute-section h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+}
+
+.contribute-section p {
+    font-family: 'Nunito', sans-serif;
+
+}
+
+/* Style the buttons */
+.contribute-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 30px;
+
+    transition-duration: 300ms;
+    margin-bottom: 20px;
+}
+
+.contribute-button:hover {
+    color: #1d5b79;
+    background-color: #444;
+    cursor: pointer;
+}
+
+/* Add a scroll-to-top button */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+.hero {
+    /* background-color: #f8f8f8; */
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: red;
+    text-align: center;
+    margin-top: 35px;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+
+.hero-content {
+    width: 600px;
+    flex: 1;
+    margin: 0 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.hero-content h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.contribute {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #c7c0c0;
+}
+
+
+
+.cntribute-container {
+    width: 100%;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.cntribute-container p {
+    text-align: center;
+}
+
+
+
+.cntribute-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #c7c0c0;
+}
+
+.hero-list {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #c7c0c0;
+}
+
+.hero-content button {
+    display: inline-block;
+    background-color: green;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-content button:hover {
+    transform: scale(1.1);
+    background-color: orange;
+    color: black;
+}
+
+.hero-img {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeRight 2s ease;
+}
+
+.hero-img img {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+@media(max-width:947px) {
+    .container1 {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    .container2 {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 0;
+        padding: 0 40px;
+    }
+
+    .hero-content {
+        width: 100%;
+        margin: 40px 0;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .contribute {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    .hero-list {
+        font-size: 1.1rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .hero-content button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .hero-img {
+        width: 100%;
+    }
+
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        padding: 0;
+    }
+
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY((50px));
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY((0));
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        opacity: 0;
+        transform: translateY((-50px));
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY((0));
     }
 }
 
@@ -269,19 +801,42 @@ textarea {
 
 }
 
-::-webkit-scrollbar{
+.contact {
+    text-align: center;
+}
+
+.flipflop {
+    position: relative;
+    transition: 1s ease;
+}
+
+.second-img {
+    position: absolute;
+    top: 0;
+    transition: 1s ease;
+    opacity: 0;
+}
+
+.second-img:hover {
+    opacity: 1;
+}
+
+.first-img:hover {
+    opacity: 0;
+}
+
+::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-track {
     /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
-    background: linear-gradient(#1ed760,#00ff59,#80c019,rgba(17,17,17,0.8));
+    background: linear-gradient(#1ed760, #00ff59, #80c019, rgba(17, 17, 17, 0.8));
     border-radius: -20px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#1ed760,#80c019);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1ed760, #80c019);
     border-radius: 20px;
     border: 2px solid #000;
-  }
-
+}
