@@ -66,6 +66,21 @@ p {
     gap: 15px;
 }
 
+.login-options button {
+    cursor: pointer;
+}
+
+.errormsg {
+    text-align: left;
+    font-size: 15px;
+    font-weight: normal;
+    color: red;
+    display: flex;
+    max-width: 327px;
+    word-wrap: break-word;
+
+}
+
 hr {
     background-color: aqua;
     width: 20vw;
