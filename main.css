@@ -592,3 +592,47 @@ body {
 
 
 }
+
+.spotify-footer {
+    background-color: #111;
+    color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    padding-left: 200px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 5px 0;
+}
+
+.footer-legal {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-legal p {
+    margin: 5px 0;
+    font-size: 0.8em;
+}
