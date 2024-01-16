@@ -155,7 +155,7 @@ document.getElementById('next').addEventListener('click', () => {
 
     } else {
 
-        if (songIndex >= 4) {
+        if (songIndex >= 5) {
             songIndex = 0
         }
         else {
