@@ -1,6 +1,8 @@
 console.log("Welcome to Spotify");
 
 // Initialize the Variables
+
+let canShuffle = false
 let songIndex = 0;
 let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
@@ -142,11 +144,18 @@ document.getElementById('next').addEventListener('click', () => {
         document.getElementsByClassName("playing")[0].classList.remove("playing");
     }
 
-    if (songIndex >= 9) {
-        songIndex = 0
-    }
-    else {
-        songIndex += 1;
+    if (canShuffle) {
+
+        songIndex = Math.floor(Math.random() * songs.length)
+
+    } else {
+
+        if (songIndex >= 4) {
+            songIndex = 0
+        }
+        else {
+            songIndex += 1;
+        }
     }
 
     audioElement.src = songs[songIndex].filePath;
@@ -173,11 +182,19 @@ document.getElementById('previous').addEventListener('click', () => {
     if (document.getElementsByClassName("playing")[0]) {
         document.getElementsByClassName("playing")[0].classList.remove("playing");
     }
-    if (songIndex <= 0) {
-        songIndex = 0
+    if (canShuffle) {
+
+        songIndex = Math.floor(Math.random() * songs.length)
+
     }
     else {
-        songIndex -= 1;
+
+        if (songIndex <= 0) {
+            songIndex = 0
+        }
+        else {
+            songIndex -= 1;
+        }
     }
     audioElement.src = songs[songIndex].filePath;
     document.getElementById("songTotalTime").innerText = "/" + document.querySelectorAll(".timestamp")[songIndex].innerText
@@ -201,4 +218,23 @@ function displaySongTime() {
     document.getElementById("songCurrTime").innerText = ((min >= 10) ? sec : ("0" + min)) + ":" + ((sec >= 10) ? sec : ("0" + sec))
 }
 
+function replay() {
+    audioElement.currentTime = 0
+}
+function shuffle() {
+    
+    if(!canShuffle){
 
+        canShuffle = true
+        document.querySelector(".fa-shuffle").style.color = "green"
+    }
+    else{
+        canShuffle = false
+        document.querySelector(".fa-shuffle").style.color = "white"
+    }
+}
+
+let vol = document.getElementById("vol");
+vol.oninput = function () {
+    audioElement.volume = vol.value / 1000;
+}
