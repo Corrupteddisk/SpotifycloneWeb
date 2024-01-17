@@ -262,6 +262,7 @@ button[type=submit] {
 
 
 .login-header p {
+    margin-top: 2vh;
     font-size: x-large;
 }
 
@@ -384,11 +385,11 @@ button[type=submit] {
     flex-direction: row;
     justify-content: center;
     border-radius: 20px;
-    width: fit-content;
+    width: 70vw;
     justify-content: center;
     /* min-width: 60vw; */
     flex-wrap: wrap;
-    height: fit-content;
+    height: max(40vw, 40vh);
     /* border:4px solid red; */
     overflow: hidden;
     transition: cubic-bezier(0.87, -0.02, 0, 1.06) 0.2s;
@@ -422,10 +423,11 @@ button[type=submit] {
 }
 
 #log-bg {
-    height: 40vw;
+    height: 100%;
     background-image: url("loginbg.png");
     background-size: cover;
     display: flex;
+    /* filter: brightness(1); */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -499,7 +501,7 @@ button[type=submit] {
     }
 
     .leftcard {
-        border: 2px solid red;
+        /* border: 2px solid red; */
         border-radius: 10px;
         margin: auto;
         width: 100%;
@@ -526,6 +528,64 @@ button[type=submit] {
 
 }
 
+@media screen and (min-width:900px) and (max-width:1100px) {
+    .login-box {
+        height: 50vh;
+    }
+    .home{
+        width: 20vw;
+        height: 6vw;
+    }
+
+}
+
+@media screen and (min-width:601px) and (max-width:899px)  {
+    .home{
+        width: 30vw;
+        height: 9vw;
+        font-size: 5vw;
+        right:5%;
+        /* border:8px solid blue; */
+    }
+
+    .header{
+        width:25vw;
+        height:10vw;
+        /* border:8px solid blue; */
+        /* overflow:hidden; */
+    }
+    .header video{
+        scale:1.9;
+        z-index: 10;
+        /* border:2px solid red; */
+    }
+}
+
+@media screen and (min-width:381px) and (max-width:600px) {
+    .home{
+        width: 50vw;
+        height: 15vw;
+        font-size: 5vw;
+        right:-5%;
+        z-index: 40;
+        /* border:8px solid blue; */
+    }
+
+    .header{
+        width:25vw;
+        height:10vw;
+        z-index:-10;
+        /* border:8px solid blue; */
+        overflow:hidden;
+        background:#ccc;
+    }
+    .header video{
+        scale:1.9;
+        z-index: 01;
+        /* border:2px solid red; */
+    }
+}
+
 @media(max-width:380px) {
     .topcard {
         width: 100%;
@@ -546,6 +606,29 @@ button[type=submit] {
     .login-box {
         width: 100%;
         margin: auto;
+    }
+    .home{
+        width: 50vw;
+        height: 15vw;
+        font-size: 5vw;
+        right:-10%;
+        top:3%;
+        z-index: 40;
+        /* border:8px solid blue; */
+    }
+
+    .header{
+        width:25vw;
+        height:10vw;
+        z-index:-10;
+        /* border:8px solid blue; */
+        overflow:hidden;
+        background:#ccc;
+    }
+    .header video{
+        scale:1.9;
+        z-index: 01;
+        /* border:2px solid red; */
     }
 
 }
