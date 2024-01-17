@@ -37,13 +37,15 @@
         <hr>
         <form name="loginForm" class="lform">
             <div class="container">
-                <label for="uname"><b>Email or Username</b></label>
-                <input type="text" id="uname" class="commonAttr" placeholder="Email or Username" name="uname" required>
+                <label for="uname"><b>Username or Email</b></label>
+                <input type="text" placeholder="Enter Username or Email" name="uname" id="name" required>
+                <p id="errormsg1" class="errormsg"></p>
                 <label for="psw"><b>Password</b></label>
                 <div class="passw">
-                    <input type="password" id="psw" class="commonAttr" placeholder="Enter Password" name="psw" required>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
                     <i class="fa fa-eye" id="toggle-password"></i>
                 </div>
+                <p id="errormsg2" class="errormsg"></p>
             </div>
             <div class="remember-me">
                 <label class="switch">
@@ -53,7 +55,8 @@
                 <p>Remember Me</p>
             </div>
             <div class="login-button">
-                <a href=""><button type="submit" onclick="return validateForm()">Login</button></a>
+                <a href=""><button type="submit" onclick="return validateForm()"
+                        style="cursor: pointer;">Login</button></a>
             </div>
             <div class="log">
                 <p>Don't have an account?</p>
