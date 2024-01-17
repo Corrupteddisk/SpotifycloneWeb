@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link rel="stylesheet" href="/style.css"> -->
     <link rel="stylesheet" href="./about.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -173,22 +176,7 @@
 
     <hr>
     <br>
-    <!-- <div class="contact">
-        <div class="contact-box">
-            <input type="text" placeholder="Your Name">
-            
-        </div>
-        <div class="contact-box">
-            <input type="email" placeholder="Your Email">
-        </div>
-        <div class="subject">
-            <input type="text" placeholder="Enter Subject">
-        </div>
-        <div class="message">
-            <textarea id="myTextarea" rows="4" cols="50" placeholder="Enter your Message"></textarea>
-        </div>
-        <button class="button">Submit</button>
-    </div> -->
+
     <div class="Formcontainer">
 
         <form id="contact-form" method="post" onsubmit="return validateForm()" action="https://formspree.io/f/xwkdveyv"
@@ -209,17 +197,74 @@
         </form>
     </div>
     <hr>
-    <div class="last-text">
-        <p>Made with 💓 by Sayan Mukherjee</p>
-    </div>
+    <!-- Scroll back Button -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='fas fa-arrow-circle-up'
+            style='font-size:36px'></i></button>
+    <!-- End of scroll back btton -->
+    <footer>
+        <div class="footer-container">
+            <div class="spt-logo">
+                <img src="./covers/Spotify-White-Logo.png" alt="">
+            </div>
+            <div class="panel2">
+                <div class="foot">
+                    <div class="company">
+                        <ul>
+                            <div class="main-head">Company</div>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+
+                    <div class="company">
+                        <ul>
+                            <div class="main-head">Communities</div>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                    </div>
+
+                    <div class="company">
+                        <ul>
+                            <div class="main-head">Useful links</div>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="social-icons">
+                    <div class="icon_border"><img src="fb.png" alt=""></div>
+                    <div class="icon_border"><img src="ig.png" alt=""></div>
+                    <div class="icon_border"><img src="twt.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="panel3" style="text-align: center;">
+            <p>&copy; <span id="year"></span> Made with 💓 by Sayan Mukherjee</p>
+        </div>
+        <br><br>
+    </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
         AOS.init({
             duration: 1000,
         });
     </script>
     <script src="Aboutnavbar.js"></script>
     <script src="ContactFormvalidation.js"></script>
+    <script src="Scroll.js"></script>
 </body>
 
 </html>
