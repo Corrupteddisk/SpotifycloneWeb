@@ -1095,3 +1095,32 @@ ul li:hover {
     /* box-shadow: inset 0 0 0 6px green; */
     text-shadow: 0 0 20px #00f94b;
 }
+#gif{
+    opacity: 1;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+#gif.animate{
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+
+}
+@keyframes spin {
+
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+.songItem img{
+    
+    height: unset;
+    aspect-ratio: 1;
+}
