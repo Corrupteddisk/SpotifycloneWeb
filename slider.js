@@ -52,3 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //---- Slider End
     
   });
+
+  function scrollToTop(){
+    window.scrollTo(0,0)
+  }
