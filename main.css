@@ -348,6 +348,33 @@ body {
     text-decoration: none;
 }
 
+/* Scroll back button */
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 70px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    color: #000000 !important;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+}
+
+.myBtn1 {
+    color: #000000 !important;
+    background-color: #fff !important;
+}
+
+.fas1 {
+    color: black !important;
+}
+
 .sideNavBar button {
     background-color: #ffffff;
     font-size: 16px;
@@ -452,21 +479,21 @@ body {
     display: none;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-track {
     /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
-    background: linear-gradient(#1ed760,#00ff59,#80c019,rgba(17,17,17,0.8));
+    background: linear-gradient(#1ed760, #00ff59, #80c019, rgba(17, 17, 17, 0.8));
     border-radius: -20px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#1ed760,#80c019);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1ed760, #80c019);
     border-radius: 20px;
     border: 2px solid #000;
-  }
+}
 
 /*  */
 
@@ -478,6 +505,7 @@ body {
     .main-container {
         width: 100%;
     }
+
     .spotify-playlists .list {
         overflow-x: scroll;
     }
