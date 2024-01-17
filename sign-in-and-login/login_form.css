@@ -114,7 +114,7 @@ input[type=password] {
     box-sizing: border-box;
     border-radius: 5px;
     background-color: black;
-    color: gray;
+    color: #fff;
 }
 
 .login-button>button {
@@ -189,6 +189,23 @@ input:checked+.slider:before {
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.passw {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.passw i {
+    position: absolute;
+    right: 0;
+    transform: translate(-50%);
+    font-size: 20px;
+}
+
+#lock {
+    cursor: pointer;
 }
 
 #toggle-password {
