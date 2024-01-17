@@ -13,9 +13,9 @@ let masterSongName = document.getElementById('masterSongName');
 
 let songs = [
     { songName: "Agar Tum Sath Ho ", filePath: "./songs/1.mp3", coverPath: "./images/1.jpg", songDur: "05:38" },
-    { songName: "Channa Mereya", filePath: "./songs/2.mp3", coverPath: "./images/2.jpg", songDur: "03:03" },
+    { songName: "Channa Mereya", filePath: "./songs/2.mp3", coverPath: "./images/2.jpg", songDur: "05:45" },
     { songName: "Darkhast", filePath: "./songs/3.mp3", coverPath: "./images/3.jpg", songDur: "07:11 " },
-    { songName: "Hamari Adhuri Kahani", filePath: "./songs/4.mp3", coverPath: "./images/4.jpg", songDur: "05:45" },
+    { songName: "Hamari Adhuri Kahani", filePath: "./songs/4.mp3", coverPath: "./images/4.jpg", songDur: "06:16" },
     { songName: "Lo Mann Liya", filePath: "./songs/5.mp3", coverPath: "./images/5.jpg", songDur: "04:41" },
 ]
 
