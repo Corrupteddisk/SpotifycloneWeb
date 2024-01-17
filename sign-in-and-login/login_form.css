@@ -13,7 +13,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* overflow-y: scroll; */
 }
+
 
 .header {
     display: flex;
@@ -56,6 +58,8 @@ p {
     min-width: 30vw;
     background-color: rgba(17, 17, 17, 1);
     border-radius: 20px;
+    /* border:2px solid aqua; */
+    scale:0.9;
     gap: 20px;
 }
 
@@ -82,7 +86,7 @@ p {
 }
 
 hr {
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 20vw;
 }
 
@@ -258,6 +262,10 @@ a:hover {
     height: inherit;
 }
 
+.login-header{
+    margin-bottom:5px;
+}
+
 .login-header>p {
     font-size: 2rem;
 }
@@ -336,6 +344,7 @@ input:checked+.slider:before {
 
 body {
     height: 100vh;
+    
 }
 
 ::-webkit-scrollbar {
@@ -358,14 +367,201 @@ body {
     width: 100% !important;
 }
 
-@media screen and (min-height:1100px) and (min-width:900px) {
+.topcard {
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    justify-content: center;
+    width: 70vw;
+    overflow:hidden;
+    justify-content: center;
+    /* min-width: 60vw; */
+    flex-wrap: wrap;
+    height: 100vw;
+    transition: cubic-bezier(0.87, -0.02, 0, 1.06) 0.2s;
+    
+}
+
+.topcard:hover {
+    box-shadow: 0px 0px 30px rgb(65, 125, 65);
+}
+
+
+
+.leftcard,
+.rightcard {
+    width: 50%;
+}
+
+.leftcard {
+    background: rgb(23, 30, 23);
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0;
+}
+
+.button{
+    z-index: 2;
+}
+
+.rightcard {
+
+    border-radius: 30px 0px 0px 30px;
+    z-index: -1;
+    padding-bottom: 10px ;
+    /* border:2px solid blue; */
+
+}
+
+#log-bg {
+    height: 100%;
+    background-image: url("loginbg.png");
+    background-size: cover;
+    display: flex;
+    /* filter: brightness(1); */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
+
+.login-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* left: 35%; */
+    background-color: rgba(17, 17, 17, 1);
+    border-radius: 20px;
+    margin: auto;
+    width: 80%;
+
+    transition: ease-in-out 2s;
+
+}
+
+/* .login-box:hover{
+    transition: ease-in-out 2s;
+    box-shadow: 0px 0px 20px white;
+} */
+
+
+.logo-photo {
+    background-image: url("favicon.png");
+    width: 15vw;
+    min-width: 60px;
+    height: 15vw;
+    min-height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-photo:hover {
+    cursor: pointer;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
+    background: linear-gradient(#1ed760, #00ff59, #80c019, rgba(17, 17, 17, 0.8));
+    border-radius: -20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1ed760, #80c019);
+    border-radius: 20px;
+    border: 2px solid #000;
+}
+
+@media screen and (min-width:320px) and (max-width: 1100px) {
+    .topcard {
+        width: 60vw;
+        background-image: url("loginbg.png");
+        background-size: cover;
+        border-radius: 10px;
+        height: fit-content;
+        padding: 6%;
+        width: fit-content;
+    }
+
+    .leftcard {
+        /* border: 2px solid red; */
+        border-radius: 10px;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        scale: 1;
+        padding: 4%;
+    }
+
     .login-box {
-        height: 50vh;
+        padding: 4%;
+        padding-left: 0%;
+    }
+
+    .rightcard {
+        display: none;
     }
 
 }
 
-@media screen and (max-width:600px) {
+@media screen and (min-width:1101px) and (max-width: 1320px) {
+    .login-box {
+        scale: 0.9;
+    }
+
+}
+
+
+@media screen and (min-width:900px) and (max-width:1100px) {
+    .login-box {
+        height: 50vh;
+    }
+    .home{
+        width: 20vw;
+        height: 6vw;
+    }
+
+}
+
+
+@media screen and (min-width:601px) and (max-width:899px)  {
+    .login-box {
+        height: 50vh;
+    }
+    .home{
+        width: 30vw;
+        height: 9vw;
+        font-size: 5vw;
+        right:5%;
+        /* border:8px solid blue; */
+    }
+
+    .header{
+        width:25vw;
+        height:10vw;
+        /* border:8px solid blue; */
+        /* overflow:hidden; */
+    }
+    .header video{
+        scale:1.9;
+        z-index: 10;
+        /* border:2px solid red; */
+    }
+
+}
+
+
+@media screen and (min-width:381px) and (max-width:600px) {
 
     .log>p,
     .log>a>p {
@@ -418,11 +614,79 @@ body {
         -ms-transform: unset;
         transform: unset;
     }
+    
+    .home{
+        width: 50vw;
+        height: 15vw;
+        font-size: 5vw;
+        right:5%;
+        z-index: 40;
+        /* border:8px solid blue; */
+    }
+
+    .header{
+        width:25vw;
+        height:10vw;
+        z-index:-10;
+        /* border:8px solid blue; */
+        overflow:hidden;
+        background:#ccc;
+    }
+    .header video{
+        scale:1.9;
+        z-index: 01;
+        /* border:2px solid red; */
+    }
 
 }
 
-@media(max-width:338px) {
-    .login-box {
-        width: 100% !important;
+@media(max-width:380px) {
+    .topcard {
+        width: 100%;
+        padding: 0;
     }
+
+    .leftcard {
+        width: 100% !important;
+        margin: auto;
+        
+        display: block;
+    }
+
+    .login-header {
+        width: 100%;
+        text-align: center;
+        margin-bottom:5px;
+        
+    }
+
+    .login-box {
+        width: 100%;
+        margin: auto;
+    }
+
+    .home{
+        width: 50vw;
+        height: 15vw;
+        font-size: 5vw;
+        right:-10%;
+        top:3%;
+        z-index: 40;
+        /* border:8px solid blue; */
+    }
+
+    .header{
+        width:25vw;
+        height:10vw;
+        z-index:-10;
+        /* border:8px solid blue; */
+        overflow:hidden;
+        background:#ccc;
+    }
+    .header video{
+        scale:1.9;
+        z-index: 01;
+        /* border:2px solid red; */
+    }
+
 }
