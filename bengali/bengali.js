@@ -39,7 +39,7 @@ let songItems = Array.from(document.getElementsByClassName('songItem'));
 document.getElementById("songTotalTime").innerText = "/" + document.querySelectorAll(".timestamp")[songIndex].innerText
 document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
 document.querySelectorAll(".songItemPlay")[0].classList.add("paused")
-
+gif.src = songs[songIndex].coverPath
 
 // Handle play/pause click
 masterPlay.addEventListener('click', () => {
@@ -47,7 +47,8 @@ masterPlay.addEventListener('click', () => {
         audioElement.play();
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
-        gif.style.opacity = 1;
+        // gif.style.opacity = 1;
+        gif.classList.add("animate");
         document.getElementsByClassName("paused")[0].classList.remove("fa-play-circle");
         document.getElementsByClassName("paused")[0].classList.add("fa-pause-circle");
         document.getElementsByClassName("paused")[0].classList.add("playing");
@@ -58,7 +59,8 @@ masterPlay.addEventListener('click', () => {
         audioElement.pause();
         masterPlay.classList.remove('fa-pause-circle');
         masterPlay.classList.add('fa-play-circle');
-        gif.style.opacity = 0;
+        // gif.style.opacity = 0;
+        gif.classList.remove("animate");
         document.getElementsByClassName("playing")[0].classList.remove("fa-pause-circle");
         document.getElementsByClassName("playing")[0].classList.add("fa-play-circle");
         document.getElementsByClassName("playing")[0].classList.add("paused");
@@ -98,7 +100,9 @@ function addingEventListener(songItems) {
                 makeAllPlays();
                 songIndex = parseInt(e.target.getElementsByClassName("songItemPlay")[0].id);
                 audioElement.pause();
-                gif.style.opacity = 0;
+                // gif.style.opacity = 0;
+                
+                gif.classList.remove("animate");
                 e.target.getElementsByClassName("songItemPlay")[0].classList.add("paused");
                 masterPlay.classList.remove('fa-pause-circle');
                 masterPlay.classList.add('fa-play-circle');
@@ -113,6 +117,7 @@ function addingEventListener(songItems) {
                     songIndex = parseInt(e.target.getElementsByClassName("songItemPlay")[0].id);
                     // console.log(songIndex)
                     audioElement.src = `songs/${songIndex + 1}.mp3`;
+                    gif.src = songs[songIndex].coverPath
                     document.getElementById("songTotalTime").innerText = "/" + document.querySelectorAll(".timestamp")[songIndex].innerText
                     document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
                     masterSongName.innerText = songs[songIndex].songName;
@@ -127,7 +132,9 @@ function addingEventListener(songItems) {
                 e.target.getElementsByClassName("songItemPlay")[0].classList.remove('fa-play-circle');
                 e.target.getElementsByClassName("songItemPlay")[0].classList.add('fa-pause-circle');
                 audioElement.play();
-                gif.style.opacity = 1;
+                // gif.style.opacity = 1;
+                
+                gif.classList.add("animate");
                 masterPlay.classList.remove('fa-play-circle');
                 masterPlay.classList.add('fa-pause-circle');
             }
@@ -164,6 +171,7 @@ document.getElementById('next').addEventListener('click', () => {
     }
 
     audioElement.src = songs[songIndex].filePath;
+    gif.src = songs[songIndex].coverPath
     document.getElementById("songTotalTime").innerText = "/" + document.querySelectorAll(".timestamp")[songIndex].innerText
     document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
     masterSongName.innerText = songs[songIndex].songName;
@@ -202,6 +210,7 @@ document.getElementById('previous').addEventListener('click', () => {
         }
     }
     audioElement.src = songs[songIndex].filePath;
+    gif.src = songs[songIndex].coverPath
     document.getElementById("songTotalTime").innerText = "/" + document.querySelectorAll(".timestamp")[songIndex].innerText
     document.querySelectorAll(".songItem")[songIndex].classList.add("currentSongItem")
     masterSongName.innerText = songs[songIndex].songName;
