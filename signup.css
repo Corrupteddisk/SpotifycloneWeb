@@ -71,6 +71,7 @@ p a {
 
 .footer {
     padding-left: 550px;
+    font-size: 13px;
 }
 .spotifycontain {
     font-weight: 100;
@@ -91,4 +92,33 @@ p a {
 }
 .signup-box:hover {
     border-color: aliceblue;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.footer-1 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+.social-icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.footer-1 p {
+    font-size: 12px;
 }
