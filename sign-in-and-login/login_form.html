@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="shortcut icon" href="https://www.netflix.com/in/favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="login_form.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/x-icon" href="favicon.png">
@@ -108,6 +110,8 @@
             <div class="login-box" data-aos="zoom-in">
                 <div class="login-options">
 
+
+
                     <button> <img src="./google.png" height="25px" width="25px" alt=""> Continue with Google</button>
 
                     <button> <img src="./facebook.png" height="30px" width="30px" alt=""> Continue with
@@ -116,6 +120,7 @@
                     <button> <img src="./apple.png" height="25px" width="22px" alt=""> Continue with Apple</button>
 
                     <button> Continue with Phone Number</button>
+
                 </div>
                 <hr>
                 <form name="loginForm" class="lform">
@@ -126,7 +131,7 @@
                         <label for="psw"><b>Password</b></label>
                         <div class="passw">
                             <input type="password" placeholder="Enter Password" name="psw" required>
-                            <i class="fa fa-eye" id="toggle-password"></i>
+                             <i class='bx bxs-lock-alt' id="lock"></i>
                         </div>
                         <p id="errormsg2" class="errormsg"></p>
                     </div>
@@ -159,9 +164,24 @@
     <img src="./guitar-1.png" class="guitar one" alt="">
     <img src="./guitar-2.png" class="guitar two" alt="">
 </body>
-<script src="./login_form.js"></script>
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="./login_form.js"></script>
 <script>
+    let password = document.getElementById("psw");
+    let lock = document.getElementById("lock");
+    lock.onclick = function () {
+        if (password.type == "password") {
+            password.type = "text";
+            lock.classList.remove("bxs-lock-alt");
+            lock.classList.add("bxs-lock-open-alt");
+        }
+        else {
+            password.type = "password";
+            lock.classList.remove("bxs-lock-open-alt");
+            lock.classList.add("bxs-lock-alt");
+        }
+    }
     AOS.init();
 </script>
 
