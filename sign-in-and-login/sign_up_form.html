@@ -11,6 +11,65 @@
     <link rel="stylesheet" href="sign_up_form.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="icon" type="image/x-icon" href="favicon.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        .home {
+            background: rgb(21, 20, 20);
+            border-radius: 20px;
+            padding: 1%;
+            float: left;
+            display: flex;
+            font-family: 'Montserrat', sans-serif;
+            align-items:center;
+            width:max(10vw,10vh);
+            height: max(3vw,3vh);
+            font-size: 2.3vw;
+            font-weight:500;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            transition: 0.8s;
+            z-index: 10;
+            position: fixed;
+            top:0;
+            right:10%;
+            scale:0.6;
+            
+        }
+
+        .home:hover{
+            color:black;
+            font-weight:700;
+            /* text-shadow: 0 0 5px black; */
+        }
+
+        .home::before{
+            content:"";
+            position:absolute;
+            width:0%;
+            height:0%;
+            left:50%;
+            background: #1ab26b;
+            z-index: -1;
+            transition: 0.8s;
+            top:50%;
+            border-radius: 50%;
+        }
+
+        .home:hover::before{
+            width: 400%;
+            height: 400%;
+            scale:200%;
+            
+        }
+
+        .header,
+        .topcard,
+        .home {
+            margin: 2vw;
+        }
+    </style>
 </head>
 
 <body>
@@ -19,6 +78,10 @@
             <video src="./Spotify.mp4" autoplay loop muted></video>
         </div>
     </div>
+
+    <a href="../index.html"><div class="button home">
+        Home
+    </div></a>
     <div class="topcard">
         <div class="leftcard">
             <div class="login-header" data-aos="fade-up">
