@@ -202,11 +202,62 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class='fas fa-arrow-circle-up'
             style='font-size:36px'></i></button>
     <!-- End of scroll back btton -->
-    <div class="last-text">
-        <p>Made with 💓 by Sayan Mukherjee</p>
-    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="spt-logo">
+                <img src="./covers/Spotify-White-Logo.png" alt="">
+            </div>
+            <div class="panel2">
+                <div class="foot">
+                    <div class="company">
+                        <ul>
+                            <div class="main-head">Company</div>
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                        </ul>
+                    </div>
+
+                    <div class="company">
+                        <ul>
+                            <div class="main-head">Communities</div>
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                        </ul>
+                    </div>
+
+                    <div class="company">
+                        <ul>
+                            <div class="main-head">Useful links</div>
+                            <li>Support</li>
+                            <li>Free Mobile App</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+                <div class="social-icons">
+                    <div class="icon_border"><img src="fb.png" alt=""></div>
+                    <div class="icon_border"><img src="ig.png" alt=""></div>
+                    <div class="icon_border"><img src="twt.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <hr>
+        <br><br>
+        <div class="panel3" style="text-align: center;">
+            <p>&copy; <span id="year"></span> Made with 💓 by Sayan Mukherjee</p>
+        </div>
+        <br><br>
+    </footer>
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
         AOS.init({
             duration: 1000,
         });
