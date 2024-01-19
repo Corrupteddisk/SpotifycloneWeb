@@ -71,7 +71,7 @@ nav li:last-child {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 800;
-    background-color: #1ed760;
+    background-color: #08fa5d;
     text-align: center;
 
 }
@@ -1142,7 +1142,7 @@ ul li:hover {
     right: 10px;
     top: -60px;
     padding: 18px;
-    background-color: #1db954;
+    background-color: #00ff59;
     border-radius: 100%;
     opacity: 0;
     transition: all ease 0.4s;

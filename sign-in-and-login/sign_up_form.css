@@ -140,6 +140,11 @@ button {
     height: 7vh;
     border-radius: 30px;
     background-color: black;
+    transition: box-shadow 0.3s ease-in-out;
+}
+button:hover{
+    /* background-color: #545454; */
+    scale: 1.05;
 }
 
 .container {
@@ -208,7 +213,7 @@ input:checked+.slider {
 }
 
 input:focus+.slider {
-    box-shadow: 0 0 1px #1ab26b;
+    box-shadow: 0 0 1px #1fc678;
 }
 
 input:checked+.slider:before {
