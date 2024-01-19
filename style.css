@@ -264,7 +264,6 @@ nav li:last-child {
 
 .hover_effect:hover {
     color: white !important;
-    text-decoration: underline !important;
 }
 
 .section-header {
@@ -427,7 +426,12 @@ a:visited {
     align-items: center;
     border-radius: 35px;
     cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    /* border: 2px solid red; */
 
+}
+.songItem:hover{
+    scale: 1.09;
 }
 
 .songItem.currentSongItem {

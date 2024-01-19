@@ -87,6 +87,19 @@ p {
     cursor: pointer;
 }
 
+#nbtn2{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+#nbtn2:hover{
+    background-color: rgb(60, 60, 60);
+}
+
+#ntxt{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    color:grey;
+}
+
 .hr-line {
     display: flex;
     align-items: center;
@@ -142,10 +155,7 @@ button {
     background-color: black;
     transition: box-shadow 0.3s ease-in-out;
 }
-button:hover{
-    /* background-color: #545454; */
-    scale: 1.05;
-}
+
 
 .container {
     display: flex;
@@ -167,6 +177,10 @@ input[type=password] {
 
 .login-button>button {
     background-color: #1ab26b;
+}
+#nbtn:hover{
+    scale:1;
+    background-color: #37de90;
 }
 
 .switch {
@@ -364,6 +378,7 @@ button[type=submit] {
     height: 5vh;
     position: relative;
     cursor: pointer;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
 
 .login-options {
