@@ -73,7 +73,7 @@ nav li:last-child {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 800;
-    background-color: #1ed760;
+    background-color: #08fa5d;
     text-align: center;
 
 }
@@ -275,7 +275,6 @@ nav li:last-child {
 
 .hover_effect:hover {
     color: white !important;
-    text-decoration: underline !important;
 }
 
 .section-header {
@@ -439,7 +438,12 @@ a:visited {
     align-items: center;
     border-radius: 35px;
     cursor: pointer;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+    /* border: 2px solid red; */
 
+}
+.songItem:hover{
+    scale: 1.09;
 }
 
 .songItem.currentSongItem {
@@ -1170,7 +1174,7 @@ ul li:hover {
     right: 10px;
     top: -60px;
     padding: 18px;
-    background-color: #1db954;
+    background-color: #00ff59;
     border-radius: 100%;
     opacity: 0;
     transition: all ease 0.4s;
