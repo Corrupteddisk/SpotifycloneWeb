@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitter:wght@600&family=Nunito+Sans:opsz,wght@6..12,600&display=swap');
 
 body {
-    background-color: rgba(17, 17, 17, 1);
+    /* background-color: rgba(17, 17, 17, 1); */
+    background-color: var(--background-color1);
 }
 
 * {
@@ -25,7 +26,8 @@ nav ul {
     align-items: center;
     list-style-type: none;
     height: 65px;
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color2);
     color: white;
 }
 
@@ -87,16 +89,19 @@ nav li:last-child {
     font-family: 'Ubuntu', sans-serif;
     font-size: 20px;
     font-weight: 800;
-    background-color: white;
+    /* background-color: white; */
+    background-color: var(--background-color3);
     text-align: center;
 }
 
 .signup1 a {
-    color: black;
+    /* color: black; */
+    color: var(--primary-color1);
 }
 
 .signup1 a:hover {
-    color: black;
+    /* color: black; */
+    color: var(--primary-color2);
     text-decoration: underline;
 }
 
@@ -148,11 +153,14 @@ nav li:last-child {
 }
 
 .homelink1 {
-    color: rgb(147, 140, 140);
+    /* color: rgb(147, 140, 140); */
+    color: var(--primary-color3);
 }
 
 .homelink1:hover {
-    color: white;
+    /* color: white; */
+    color: var(--primary-color4);
+    text-decoration: underline;
 }
 
 .homelink2 {
@@ -162,11 +170,14 @@ nav li:last-child {
 
 .aboutlink {
     text-decoration: none;
-    color: rgb(147, 140, 140);
+    /* color: rgb(147, 140, 140); */
+    color: var(--primary-color5);
 }
 
 .aboutlink:hover {
-    color: white;
+    /* color: white; */
+    color: var(--primary-color6);
+    text-decoration: underline;
 
 }
 
@@ -349,7 +360,8 @@ a:visited {
 }
 
 .indicators a {
-    background: lightgray;
+    /* background: lightgray; */
+    background: var(--background-color4);
     border-radius: 8px;
     display: inline-block;
     height: 16px;
@@ -518,7 +530,8 @@ h1 {
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
     font-size: 3rem;
-    color: azure;
+    /* color: azure; */
+    color: var(--primary-color7);
     text-decoration: underline;
 
 }
@@ -688,7 +701,8 @@ h1 {
 
 
 footer {
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color6);
     width: 100%;
 }
 
@@ -705,7 +719,8 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color6);
     height: 100%;
 }
 
@@ -721,10 +736,12 @@ footer {
 
 .foot {
     /* height: 40vh; */
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color7);
     display: flex;
     align-items: center;
-    color: white;
+    /* color: white; */
+    color: var(--primary-color16);
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 90px;
@@ -743,12 +760,14 @@ ul {
 ul li {
     list-style-type: none;
     cursor: pointer;
-    color: rgb(147, 140, 140);
+    /* color: rgb(147, 140, 140); */
+    color: var(--primary-color17);
     margin-top: 15px;
 }
 
 ul li:hover {
-    color: white;
+    /* color: white; */
+    color: var(--primary-color18);
     text-decoration: underline;
 }
 
@@ -761,12 +780,14 @@ ul li:hover {
 }
 
 .icon_border {
-    border: 0.5px solid black;
+    /* border: 0.5px solid black; */
+    border: 0.5px solid var(--background-color9);
     border-radius: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(168, 164, 164, 0.5);
+    /* background-color: rgba(168, 164, 164, 0.5); */
+    background-color: var(--background-color8);
     margin: 9px 9px;
 }
 
@@ -774,7 +795,8 @@ ul li:hover {
     transform: scale(1.2);
     transition: ease 0.5s;
     border-radius: 100%;
-    background-color: rgb(123, 144, 144);
+    /* background-color: rgb(123, 144, 144); */
+    background-color: var(--background-color10);
 }
 
 .social-icons {
@@ -809,7 +831,8 @@ ul li:hover {
 }
 
 .panel3 p {
-    color: white;
+    /* color: white; */
+    color: var(--primary-color19);
 }
 
 
@@ -919,14 +942,16 @@ ul li:hover {
 
 #about,
 #main {
-    color: rgb(147, 140, 140);
+    /* color: rgb(147, 140, 140); */
+    color: var(--primary-color14);
     text-decoration: none;
 }
 
 #about:hover,
 #main:hover {
     text-decoration: underline;
-    color: white;
+    /* color: white; */
+    color: var(--primary-color15);
 
 }
 
@@ -1028,7 +1053,8 @@ ul li:hover {
     aspect-ratio: 1/1;
     margin: 14px;
     color: white;
-    text-shadow: 0 0 7px white;
+    /* text-shadow: 0 0 7px white; */
+    text-shadow: 0 0 7px var(--primary-color13);
     font-family: sans-serif;
 }
 
@@ -1049,7 +1075,8 @@ ul li:hover {
 .genre a,
 .genre a:link,
 .genre a:visited {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: var(--primary-color12);
     text-decoration: none;
 
 }
@@ -1095,7 +1122,8 @@ ul li:hover {
     font-size: 2.8rem;
     /* drop-shadow: 0 0 0px #00fd4b; */
     /* box-shadow: inset 0 0 0 6px green; */
-    text-shadow: 0 0 20px #00f94b;
+    /* text-shadow: 0 0 20px #00f94b; */
+    text-shadow: 0 0 20px var(--background-color5);
 }
 
 #gif {
@@ -1219,3 +1247,104 @@ ul li:hover {
     }
 
 }
+
+#icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  #icon:hover {
+    transform: scale(1.1);
+  }
+  .light_dark{
+    margin-left: 480px;
+  }
+  #signup{
+    /* color: black; */
+    color: var(--primary-color8);
+  }
+  #support:hover{
+    text-decoration: underline;
+    color: white;
+    color: var(--primary-color9);
+  }
+  #spotify{
+    /* color: rgb(147, 140, 140); */
+    color: var(--primary-color10);
+  }
+  #spotify:hover{
+    /* color: white; */
+    color: var(--primary-color11);
+    text-decoration: underline;
+  }
+
+
+  :root{
+    --background-color1: rgba(17, 17, 17, 1);
+    --background-color2: black;
+    --background-color3: white;
+    --primary-color1:black;
+    --primary-color2:black;
+    --primary-color3:rgb(147, 140, 140);
+    --primary-color4:white;
+    --primary-color5:rgb(147, 140, 140);
+    --primary-color6:white;
+    --primary-color7:azure;
+    --primary-color8:black;
+    --primary-color9:white;
+    --primary-color10:rgb(147, 140, 140);
+    --primary-color11:white;
+    --primary-color12:#ffffff;
+    --primary-color13:white;
+    --primary-color14:rgb(147, 140, 140);
+    --primary-color15:white;
+    --primary-color16:white;
+    --primary-color17:rgb(147, 140, 140);
+    --primary-color18:white;
+    --primary-color19:white;
+    --background-color4:lightgray;
+    --background-color5:#00f94b;
+    --background-color6:black;
+    --background-color7:black;
+    --background-color8:rgb(147, 140, 140);
+    --background-color9:black;
+    --background-color10:rgb(123, 144, 144);
+    
+    
+
+  }
+
+  .dark-theme{
+    --background-color1: rgb(252, 248, 248);
+    --background-color2: white;
+    --background-color3: black;
+    --primary-color1:white;
+    --primary-color2:white;
+    --primary-color3:black;
+    --primary-color4:rgb(42, 180, 14);
+    --primary-color5:rgb(42, 180, 14);
+    --primary-color6:rgb(42, 180, 14);
+    --primary-color7:rgb(109, 175, 175);
+    --primary-color8:white;
+    --primary-color9:rgb(42, 180, 14);
+    --primary-color10:black;
+    --primary-color11:rgb(42, 180, 14);
+    --primary-color12:black;
+    --primary-color13:rgb(32, 31, 31);
+    --primary-color14:rgb(82, 81, 81);
+    --primary-color15:rgb(42, 180, 14);
+    --primary-color16:black;
+    --primary-color17:rgb(106, 102, 102);
+    --primary-color18:rgb(25, 25, 25);
+    --primary-color19:rgb(25, 25, 25);
+    --background-color4: black;
+    --background-color5: black;
+    --background-color6: white;
+    --background-color7: white;
+    --background-color8: black;
+    --background-color9: white;
+    --background-color10: rgb(206, 49, 49);
+   
+
+  }
