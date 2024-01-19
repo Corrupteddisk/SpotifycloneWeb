@@ -7,16 +7,18 @@
 }
 
 body {
-    background: #000;
+    /* background: #000; */
+    background: var(--background-color1);
     font-family: 'Poppins', sans-serif;
-    color: #fff;
+    /* color: #fff; */
+    color: var(--primary-color1);
 }
 
 nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    height: 65px;
+    height: 80px;
     background-color: black;
     color: white;
 }
@@ -304,7 +306,7 @@ nav li:last-child {
 
 .vid>video {
     width: 100%;
-    height: 100%;
+    height: 85%;
     object-fit: cover;
     margin-top: 9px;
 }
@@ -506,7 +508,8 @@ textarea {
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: var(--background-color2);
     color: red;
     cursor: pointer;
     padding: 15px;
@@ -629,7 +632,8 @@ textarea {
 }
 
 .contribute-button:hover {
-    color: #1d5b79;
+    /* color: #1d5b79; */
+    color: var(--primary-color9);
     background-color: #444;
     cursor: pointer;
 }
@@ -659,7 +663,8 @@ textarea {
 
 .hero h1 {
     font-size: 2.5rem;
-    color: red;
+    /* color: red; */
+    color: var(--primary-color2);
     text-align: center;
     margin-top: 35px;
 }
@@ -683,7 +688,8 @@ textarea {
     margin-top: 30px;
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #fff;
+    /* color: #fff; */
+    color: var(--primary-color3);
 }
 
 .contribute {
@@ -697,7 +703,8 @@ textarea {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 40px;
-    color: #c7c0c0;
+    /* color: #c7c0c0; */
+    color: var(--primary-color4);
 }
 
 
@@ -718,14 +725,16 @@ textarea {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 40px;
-    color: #c7c0c0;
+    /* color: #c7c0c0; */
+    color: var(--primary-color8);
 }
 
 .hero-list {
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 40px;
-    color: #c7c0c0;
+    /* color: #c7c0c0; */
+    color: var(--primary-color5);
 }
 
 .hero-content button {
@@ -761,7 +770,8 @@ textarea {
 
 /* Footer Content */
 footer {
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color3);
     width: 100%;
 }
 
@@ -778,7 +788,8 @@ footer {
 .footer-container {
     display: flex;
     flex-direction: column;
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color3);
     height: 100%;
 }
 
@@ -794,10 +805,12 @@ footer {
 
 .foot {
     /* height: 40vh; */
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color3);
     display: flex;
     align-items: center;
-    color: white;
+    /* color: white; */
+    color: var(--primary-color10);
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 90px;
@@ -816,12 +829,14 @@ ul {
 ul li {
     list-style-type: none;
     cursor: pointer;
-    color: rgb(147, 140, 140);
+    /* color: rgb(147, 140, 140); */
+    color: var(--primary-color6);
     margin-top: 15px;
 }
 
 ul li:hover {
-    color: white;
+    /* color: white; */
+    color: var(--primary-color7);
     text-decoration: underline;
     transform: translateX(10px);
 }
@@ -862,11 +877,12 @@ ul li:hover {
     height: 30px;
     padding: 5px 5px;
     margin: 4px 4px;
-    color: white;
+    /* color: white; */
+    color: var(--primary-color11);
 }
 
 .social-icons i {
-    color: white;
+    color: black;
     font-size: 3rem;
     padding: 5px 5px;
     margin: 4px 4px;
@@ -883,7 +899,8 @@ ul li:hover {
 }
 
 .panel3 p {
-    color: white;
+    /* color: white; */
+    color: var(--primary-color11);
 }
 
 
@@ -1087,3 +1104,52 @@ ul li:hover {
     border-radius: 20px;
     border: 2px solid #000;
 }
+
+
+#icon {
+    width: 56px;
+    height: 35px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  
+  #icon:hover {
+    transform: scale(1.1);
+  }
+  .light_dark{
+    margin-left: 480px;
+  }
+
+  :root{
+    --background-color1:#000;
+    --background-color2:#fff;
+    --background-color3:black;
+    --primary-color1:#fff;
+    --primary-color2:red;
+    --primary-color3:#fff;
+    --primary-color4:#c7c0c0;
+    --primary-color5:#c7c0c0;
+    --primary-color6:rgb(147, 140, 140);
+    --primary-color7:white;
+    --primary-color8:#c7c0c0;
+    --primary-color9: #1d5b79;
+    --primary-color10: white;
+    --primary-color11: white;
+  }
+  .dark-theme{
+    --background-color1:white;
+    --background-color2:#000;
+    --background-color3:white;
+    --primary-color1:#000;
+    --primary-color2:rgb(59, 99, 243);
+    --primary-color3:#000;
+    --primary-color4:#614d4d;
+    --primary-color5:#614d4d;
+    --primary-color6:rgb(126, 111, 111);
+    --primary-color7:rgb(48, 47, 47);
+    --primary-color8:#614d4d;
+    --primary-color9:#a0d0e7;
+    --primary-color10:black;
+    --primary-color11:black;
+  }

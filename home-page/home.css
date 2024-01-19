@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 body{
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color1);
 }
 
 .nav-bar{
@@ -10,7 +11,8 @@ body{
     align-items: center;
     justify-content: space-around;
     /* background-color: rgba(17,17,17,1); */
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--background-color2);
     height: 10vh;
     width: 98vw;
     gap: 50vw;
@@ -54,7 +56,8 @@ body{
 
 .intro{
     text-align: center;
-    color: white;
+    /* color: white; */
+    color: var(--primary-color1);
     font-family: 'Poppins', sans-serif;
     font-size: 8vw;
 }
@@ -328,3 +331,34 @@ body{
 
     }
 }
+
+
+#icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  
+  #icon:hover {
+    transform: scale(1.1);
+  }
+
+  .end-text{
+    /* color: white; */
+    color: var(--primary-color2);
+  }
+
+  :root{
+    --background-color1:black;
+    --background-color2:black;
+    --primary-color1:white;
+    --primary-color2:white;
+  }
+  .dark-theme{
+    --background-color1:white;
+    --background-color2:white;
+    --primary-color1:black;
+    --primary-color2:black;
+  }

@@ -3,7 +3,8 @@
     width: 150px;
 }
 body{
-    background: linear-gradient(to right bottom, rgba(17, 88, 17, 0.805),black,black);
+    /* background: linear-gradient(to right bottom, rgba(17, 88, 17, 0.805),black,black); */
+    background: linear-gradient(to right bottom, var(--background-color1),var(--background-color2),var(--background-color3));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -70,9 +71,11 @@ margin: 0;
 
 #sec3{
     padding: 70px;
-    color:white;
+    /* color:white; */
+    color: var(--primary-color2);
     text-align: center;
-    background-color: #161515;
+    /* background-color: #161515; */
+    background-color: var(--background-color5);
 }
 .b{
     background-color: #18bf34; /* Green */
@@ -88,7 +91,8 @@ margin: 0;
 
 .footer {
     padding: 80px;
-    background-color: #080808;
+    /* background-color: #080808; */
+    background-color: var(--background-color6);
 }
 .footer img{
     margin-left: 100px;
@@ -148,8 +152,10 @@ margin: 0;
     height: 600px;
     text-align: center;
     font-size: 18px;
-    color: white;
-    background-color: rgb(42, 41, 41);
+    /* color: white; */
+    color: var(--primary-color1);
+    /* background-color: rgb(42, 41, 41); */
+    background-color: var(--background-color4);
 
 }
 
@@ -274,3 +280,42 @@ input[type="radio"] {
     margin-top: 15px;
     font-size: 14px;   
 }
+
+
+#icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  #icon:hover {
+    transform: scale(1.1);
+  }
+  .light_dark{
+    margin-top: 23px;
+  }
+  .container{
+    color: black;
+  }
+
+  :root{
+    --background-color1:rgba(17, 88, 17, 0.805);
+    --background-color2:black;
+    --background-color3:black;
+    --background-color4:rgb(42, 41, 41);
+    --background-color5:#161515;
+    --background-color6:#080808;
+    --primary-color1:white;
+    --primary-color2:white;
+  }
+
+  .dark-theme{
+    --background-color1:rgba(57, 56, 56, 0.805);
+    --background-color2:rgb(55, 54, 54);
+    --background-color3:rgb(110, 104, 104);
+    --background-color4:rgb(218, 218, 218);
+    --background-color5:white;
+    --background-color6:linear-gradient(to right bottom, var(--background-color1),var(--background-color2),var(--background-color3));;
+    --primary-color1:black;
+    --primary-color2:black;
+  }
