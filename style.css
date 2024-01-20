@@ -105,7 +105,7 @@ nav li:last-child {
     text-decoration: underline;
 }
 
-#srch{
+#srch {
     height: 2.5em;
     width: 15rem;
     border-radius: 15px;
@@ -113,7 +113,7 @@ nav li:last-child {
     margin: 0;
 }
 
-#txts{
+#txts {
     padding: 2px;
     background-color: #00f94b;
     color: #000;
@@ -463,7 +463,8 @@ a:visited {
     /* border: 2px solid red; */
 
 }
-.songItem:hover{
+
+.songItem:hover {
     scale: 1.09;
 }
 
@@ -1260,6 +1261,7 @@ ul li:hover {
     }
 
 }
+
 @media screen and (min-width:601px) and (max-width:1430px) {
     .diffGenre {
         flex-wrap: wrap;
@@ -1277,92 +1279,97 @@ ul li:hover {
     width: 30px;
     height: 30px;
     cursor: pointer;
-  }
-  
-  #icon:hover {
+}
+
+#icon:hover {
     transform: scale(1.1);
-  }
-  .light_dark{
+}
+
+.light_dark {
     margin-left: 480px;
-  }
-  #signup{
+}
+
+#signup {
     /* color: black; */
     color: var(--primary-color8);
-  }
-  #support:hover{
+}
+
+#support:hover {
     text-decoration: underline;
     color: white;
     color: var(--primary-color9);
-  }
-  #spotify{
+}
+
+#spotify {
     /* color: rgb(147, 140, 140); */
     color: var(--primary-color10);
-  }
-  #spotify:hover{
+}
+
+#spotify:hover {
     /* color: white; */
     color: var(--primary-color11);
     text-decoration: underline;
-  }
+}
 
 
-  :root{
+:root {
     --background-color1: rgba(17, 17, 17, 1);
     --background-color2: black;
     --background-color3: white;
-    --primary-color1:black;
-    --primary-color2:black;
-    --primary-color3:rgb(147, 140, 140);
-    --primary-color4:white;
-    --primary-color5:rgb(147, 140, 140);
-    --primary-color6:white;
-    --primary-color7:azure;
-    --primary-color8:black;
-    --primary-color9:white;
-    --primary-color10:rgb(147, 140, 140);
-    --primary-color11:white;
-    --primary-color12:#ffffff;
-    --primary-color13:white;
-    --primary-color14:rgb(147, 140, 140);
-    --primary-color15:white;
-    --primary-color16:white;
-    --primary-color17:rgb(147, 140, 140);
-    --primary-color18:white;
-    --primary-color19:white;
-    --background-color4:lightgray;
-    --background-color5:#00f94b;
-    --background-color6:black;
-    --background-color7:black;
-    --background-color8:rgb(147, 140, 140);
-    --background-color9:black;
-    --background-color10:rgb(123, 144, 144);
-    
-    
+    --primary-color1: black;
+    --primary-color2: black;
+    --primary-color3: rgb(147, 140, 140);
+    --primary-color4: white;
+    --primary-color5: rgb(147, 140, 140);
+    --primary-color6: white;
+    --primary-color7: azure;
+    --primary-color8: black;
+    --primary-color9: white;
+    --primary-color10: rgb(147, 140, 140);
+    --primary-color11: white;
+    --primary-color12: #ffffff;
+    --primary-color13: white;
+    --primary-color14: rgb(147, 140, 140);
+    --primary-color15: white;
+    --primary-color16: white;
+    --primary-color17: rgb(147, 140, 140);
+    --primary-color18: white;
+    --primary-color19: white;
+    --background-color4: lightgray;
+    --background-color5: #00f94b;
+    --background-color6: black;
+    --background-color7: black;
+    --background-color8: rgb(147, 140, 140);
+    --background-color9: black;
+    --background-color10: rgb(123, 144, 144);
 
-  }
 
-  .dark-theme{
+
+}
+
+.dark-theme {
     --background-color1: rgb(252, 248, 248);
     --background-color2: white;
     --background-color3: black;
-    --primary-color1:white;
-    --primary-color2:white;
-    --primary-color3:black;
-    --primary-color4:rgb(42, 180, 14);
-    --primary-color5:rgb(42, 180, 14);
-    --primary-color6:rgb(42, 180, 14);
-    --primary-color7:rgb(109, 175, 175);
-    --primary-color8:white;
-    --primary-color9:rgb(42, 180, 14);
-    --primary-color10:black;
-    --primary-color11:rgb(42, 180, 14);
-    --primary-color12:black;
-    --primary-color13:rgb(32, 31, 31);
-    --primary-color14:rgb(82, 81, 81);
-    --primary-color15:rgb(42, 180, 14);
-    --primary-color16:black;
-    --primary-color17:rgb(106, 102, 102);
-    --primary-color18:rgb(25, 25, 25);
-    --primary-color19:rgb(25, 25, 25);
+    --primary-color1: white;
+    --primary-color2: white;
+    --primary-color3: black;
+    --primary-color4: rgb(42, 180, 14);
+    --primary-color5: rgb(42, 180, 14);
+    --primary-color6: rgb(42, 180, 14);
+    --primary-color7: rgb(109, 175, 175);
+    --primary-color8: white;
+    --primary-color9: rgb(42, 180, 14);
+    --primary-color10: black;
+    --primary-color11: rgb(42, 180, 14);
+    --primary-color12: black;
+    --primary-color13: rgb(32, 31, 31);
+    --primary-color14: rgb(82, 81, 81);
+    --primary-color15: rgb(42, 180, 14);
+    --primary-color16: black;
+    --primary-color17: rgb(106, 102, 102);
+    --primary-color18: rgb(25, 25, 25);
+    --primary-color19: rgb(25, 25, 25);
     --background-color4: black;
     --background-color5: black;
     --background-color6: white;
@@ -1370,6 +1377,41 @@ ul li:hover {
     --background-color8: black;
     --background-color9: white;
     --background-color10: rgb(206, 49, 49);
-   
 
-  }
+
+}
+
+.dark-theme .bg {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+
+    background: #fff;
+    --gap: 5em;
+    --line: 1px;
+    --color: rgba(0, 0, 0, 0.2);
+
+    background-image: linear-gradient(-90deg,
+            transparent calc(var(--gap) - var(--line)),
+            var(--color) calc(var(--gap) - var(--line) + 1px),
+            var(--color) var(--gap)),
+        linear-gradient(0deg,
+            transparent calc(var(--gap) - var(--line)),
+            var(--color) calc(var(--gap) - var(--line) + 1px),
+            var(--color) var(--gap));
+    background-size: var(--gap) var(--gap);
+}
+
+.dark-theme nav {
+    box-shadow: 0 0 20px 4px #b3b3b3;
+}
+
+.dark-theme footer {
+    background: rgb(205, 205, 205);
+    background: linear-gradient(135deg, rgba(205, 205, 205, 1) 0%, rgba(224, 224, 224, 1) 64%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: 0px -5px 20px #717171;
+}
+.dark-theme .foot, .dark-theme .footer-container{
+    background-color: unset;
+}
