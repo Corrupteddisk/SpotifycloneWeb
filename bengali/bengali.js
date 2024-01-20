@@ -461,3 +461,17 @@ let vol = document.getElementById("vol");
 vol.oninput = function () {
     audioElement.volume = vol.value / 1000;
 }
+
+var icon = document.getElementById("icon");
+icon.onclick = function () {
+document.body.classList.toggle("dark-theme");
+  if (document.body.classList.contains("dark-theme")) {
+    // icon.src = "sun-icon.png";
+    icon.src = "../moon-icon.png";
+}
+else {
+//   icon.src = "moon-icon.png";
+  icon.src = "../sun-icon.png";
+
+}
+}
