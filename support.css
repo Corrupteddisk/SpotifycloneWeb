@@ -1,43 +1,47 @@
-#logo{
+#logo {
     height: 50px;
     width: 150px;
 }
-body{
+
+body {
     /* background: linear-gradient(to right bottom, rgba(17, 88, 17, 0.805),black,black); */
-    background: linear-gradient(to right bottom, var(--background-color1),var(--background-color2),var(--background-color3));
+    background: linear-gradient(to right bottom, var(--background-color1), var(--background-color2), var(--background-color3));
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.support{
+
+.support {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-section div{
+
+section div {
     margin-top: 40px;
 }
-section input{
+
+section input {
     width: 500px;
-    
+
 }
 
 .wrapper {
     position: relative;
     display: flex;
     min-width: 100px;
-  }
+}
 
 
-  .clear-icon {
+.clear-icon {
     position: absolute;
     top: 3px;
     right: 8px;
     width: 10px;
     cursor: pointer;
-  
-  }
 
-  .search {
+}
+
+.search {
     border: 1px solid grey;
     border-radius: 5px;
     height: 20px;
@@ -46,30 +50,36 @@ section input{
     outline: 0;
     background-color: #f5f5f5;
     transition: 1s;
-  }
+}
 
-  .search:hover, .search:focus {
+.search:hover,
+.search:focus {
     border: 1.5px solid #009688;
     background-color: white;
     transform: scale(1);
-  }
+}
 
-input, select, textarea{
+input,
+select,
+textarea {
     color: #080808;
 }
-input::placeholder{
+
+input::placeholder {
     color: rgb(0, 0, 0);
-  }
-span{
+}
+
+span {
     color: #ffffff;
     text-decoration: underline
 }
-#img1>div{
-margin: 0;
+
+#img1>div {
+    margin: 0;
 
 }
 
-#sec3{
+#sec3 {
     padding: 70px;
     /* color:white; */
     color: var(--primary-color2);
@@ -77,8 +87,10 @@ margin: 0;
     /* background-color: #161515; */
     background-color: var(--background-color5);
 }
-.b{
-    background-color: #18bf34; /* Green */
+
+.b {
+    background-color: #18bf34;
+    /* Green */
     border: none;
     border-radius: 10%;
     color: white;
@@ -94,10 +106,12 @@ margin: 0;
     /* background-color: #080808; */
     background-color: var(--background-color6);
 }
-.footer img{
+
+.footer img {
     margin-left: 100px;
     width: 150px;
 }
+
 .footer h2 {
     font-size: 18px;
     font-weight: 400;
@@ -128,19 +142,21 @@ margin: 0;
     padding: 10px 0;
 }
 
-.footer .lang-btn{
+.footer .lang-btn {
     color: #f6efef;
     background-color: #161515;
     padding: 10px 20px;
-    border-radius:  3px;
+    border-radius: 3px;
 }
-.copyright-txt{
+
+.copyright-txt {
     font-size: 14px;
     margin-top: 20px;
     margin-bottom: 10px;
     color: #f5f5f5;
 }
-.footer h6{
+
+.footer h6 {
     color: grey;
 }
 
@@ -191,7 +207,8 @@ label::after {
     right: 20px;
     transition: transform 0.5s;
 }
-label:hover{
+
+label:hover {
     text-decoration: underline;
 }
 
@@ -206,23 +223,23 @@ input[type="radio"] {
     padding: 30px 20px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 15px;
-  }
-  
-  ::-webkit-scrollbar-track{
+}
+
+::-webkit-scrollbar-track {
     /* background: linear-gradient(#7ab6e0,#7ab6e0,#7ab6e0,#ffffff, #edbb00 #ffffff,#7ab6e0,#7ab6e0, #7ab6e0); */
-    background: linear-gradient(#1ed760,#00ff59,#80c019,rgba(17,17,17,0.8));
+    background: linear-gradient(#1ed760, #00ff59, #80c019, rgba(17, 17, 17, 0.8));
     border-radius: -20px;
-  }
-  
-  ::-webkit-scrollbar-thumb{
-    background: linear-gradient(#1ed760,#80c019);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#1ed760, #80c019);
     border-radius: 20px;
     border: 2px solid #000;
-  }
-  
-  .social-icons {
+}
+
+.social-icons {
     display: flex;
     justify-content: center;
     margin-bottom: auto;
@@ -263,7 +280,7 @@ input[type="radio"] {
     border-radius: 100%;
 }
 
-.border1:hover{
+.border1:hover {
     background-color: #1877F2;
 }
 
@@ -278,7 +295,7 @@ input[type="radio"] {
 .footer p {
     color: rgb(164, 164, 164);
     margin-top: 15px;
-    font-size: 14px;   
+    font-size: 14px;
 }
 
 
@@ -286,36 +303,76 @@ input[type="radio"] {
     width: 30px;
     height: 30px;
     cursor: pointer;
-  }
-  
-  #icon:hover {
+}
+
+#icon:hover {
     transform: scale(1.1);
-  }
-  .light_dark{
+}
+
+.light_dark {
     margin-top: 23px;
-  }
-  .container{
+}
+
+.container {
     color: black;
-  }
+}
 
-  :root{
-    --background-color1:rgba(17, 88, 17, 0.805);
-    --background-color2:black;
-    --background-color3:black;
-    --background-color4:rgb(42, 41, 41);
-    --background-color5:#161515;
-    --background-color6:#080808;
-    --primary-color1:white;
-    --primary-color2:white;
-  }
+@media(max-width:575px) {
+    .container {
+        text-align: center !important;
+    }
 
-  .dark-theme{
-    --background-color1:rgba(57, 56, 56, 0.805);
-    --background-color2:rgb(55, 54, 54);
-    --background-color3:rgb(110, 104, 104);
-    --background-color4:rgb(218, 218, 218);
-    --background-color5:white;
-    --background-color6:linear-gradient(to right bottom, var(--background-color1),var(--background-color2),var(--background-color3));;
-    --primary-color1:black;
-    --primary-color2:black;
-  }
+    .wrapper {
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1,
+    h4,
+    h6 {
+        padding: 10px;
+    }
+
+
+    .search {
+        width: 90%;
+    }
+}
+
+@media(max-width:695px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center;
+    }
+}
+
+:root {
+    --background-color1: rgba(17, 88, 17, 0.805);
+    --background-color2: black;
+    --background-color3: black;
+    --background-color4: rgb(42, 41, 41);
+    --background-color5: #161515;
+    --background-color6: #080808;
+    --primary-color1: white;
+    --primary-color2: white;
+}
+
+.dark-theme {
+    --background-color1: rgba(57, 56, 56, 0.805);
+    --background-color2: rgb(55, 54, 54);
+    --background-color3: rgb(110, 104, 104);
+    --background-color4: rgb(218, 218, 218);
+    --background-color5: white;
+    --background-color6: linear-gradient(to right bottom, var(--background-color1), var(--background-color2), var(--background-color3));
+    ;
+    --primary-color1: black;
+    --primary-color2: black;
+}
