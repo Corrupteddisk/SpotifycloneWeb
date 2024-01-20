@@ -105,6 +105,27 @@ nav li:last-child {
     text-decoration: underline;
 }
 
+#srch{
+    height: 2.5em;
+    width: 15rem;
+    border-radius: 15px;
+    padding: 2.5px;
+    margin: 0;
+}
+
+#txts{
+    padding: 2px;
+    background-color: #00f94b;
+    color: #000;
+    height: 2.5em;
+    width: 5em;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 800;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+}
+
 .sidebar {
     position: fixed;
     top: 0;
